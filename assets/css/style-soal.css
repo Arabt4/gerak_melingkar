@@ -1,0 +1,567 @@
+.valign {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.div2 {
+  float: left;
+  width: 100%;
+  height: 30px;
+  border: 1px solid black;
+}
+
+.kontainer {
+  overflow-x: scroll; /* showing scrollbars */
+  overflow-y: hidden;
+}
+
+.div1 {
+  float: left;
+  width: 100%;
+  height: 30px;
+}
+
+.menu {
+  display: inline-block;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.menu:hover {
+  transform: scale(1.15);
+}
+
+.content {
+  background: white;
+  width: 100%;
+  height: 500px;
+}
+
+.kotakDrag {
+  width: 100%;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #000000;
+  font-weight: bold;
+}
+
+.kotakDrag2 {
+  width: auto;
+  height: 150px;
+  padding: 10px;
+  border: 1px solid #000000;
+  font-weight: bold;
+}
+
+.isi {
+  background-color: white;
+  height: 100%;
+  width: 36%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: candara;
+  font-size: 17px;
+  line-height: 1.5;
+  padding: 2%;
+  text-align: justify;
+  color: black;
+  float: left;
+  margin: 0.5%;
+}
+
+.isicontent {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-family: candara;
+  font-size: 17px;
+  line-height: 1.5;
+  padding: 2%;
+  text-align: justify;
+  float: left;
+  color: black;
+}
+
+.tujuan {
+  background-color: #1a2a42;
+  font-family: "Times New Roman";
+  border: none;
+  color: #fff;
+  padding: 7px 10px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 5px;
+}
+
+.tujuan:hover {
+  background-color: #d48166;
+}
+
+.tujuan:active {
+  background-color: #d48166;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#tujuan {
+  width: 110%;
+  height: 170px;
+  text-align: left;
+  background-color: #d48166;
+  border: 3px dotted #1a2a42;
+  color: #000;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+.hilang {
+  display: none;
+}
+
+.controls_vid_button {
+  margin-left: 5px;
+  float: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  border: 2px dotted #fff;
+  background-color: #1a2a42;
+  font-size: 14px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 10px;
+}
+.controls_vid_button:hover {
+  cursor: pointer;
+  border: 2px dotted #000;
+  background-color: #d48166;
+  color: #000;
+}
+
+.tombolnya {
+  margin-left: 5px;
+  float: center;
+  font-family: "Lucida Sans";
+  border: 2px solid #fff;
+  background-color: #0d6efd;
+  font-size: 16px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.tombolnya:hover {
+  cursor: pointer;
+  border: 2px solid #000;
+  color: #000;
+}
+
+.tombolnyares {
+  margin-left: 5px;
+  float: center;
+  font-family: "Lucida Sans";
+  border: 2px solid #fff;
+  background-color: #dc3545;
+  font-size: 16px;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
+.tombolnyares:hover {
+  cursor: pointer;
+  border: 2px solid #000;
+  color: #000;
+}
+
+.isimateri {
+  background-color: #d48166; /*ISI MATERI SUB BAB*/
+
+  border: 3px dashed #1a2a42;
+  color: rgb(255, 251, 251);
+  padding: 7px 10px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.isimateri:hover {
+  background-color: #ffdead;
+  color: black;
+}
+
+.isimateri:active {
+  background-color: #d48166;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#isimateri {
+  width: 100%;
+  height: auto;
+  text-align: left;
+  background-color: #ffdead;
+  border: 3px dashed #1a2a42;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-inline-end: 10px;
+  padding: 10px;
+}
+
+.isimateri2 {
+  background-color: #d48166; /*ISI MATERI SUB BAB*/
+
+  border: 3px dashed #1a2a42;
+  color: rgb(255, 251, 251);
+  padding: 7px 10px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.isimateri2:hover {
+  background-color: #ffdead;
+  color: black;
+}
+
+.isimateri2:active {
+  background-color: #d48166;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+#isimateri2 {
+  width: auto;
+  height: auto;
+  text-align: left;
+  background-color: #ffdead;
+  border: 3px dashed #1a2a42;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-inline-end: 10px;
+  padding: 10px;
+}
+.rumus {
+  background-color: #1a2c42;
+  padding: 5px 5px;
+  border-bottom: 4px solid white;
+  color: #fcfcfc;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: "lucida sans";
+}
+.isirumus {
+  background-color: #d48166;
+  padding: 5%;
+  border-radius: 5px;
+  box-shadow: 7px 7px 5px grey;
+  font-size: 25px;
+  color: black;
+}
+
+.kwtlurus {
+  max-width: max-content;
+  height: 110px;
+  border: #000 solid 2px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ffdead;
+  color: #000;
+}
+.kirimvid {
+  max-width: max-content;
+  height: 120px;
+  border: #000 solid 2px;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #ffdead;
+  color: #000;
+}
+.melingkar1 {
+  width: 200px;
+  height: 80px;
+  border: #000 solid 2px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #ffdead;
+}
+.melingkar2 {
+  width: 200px;
+  height: 80px;
+  border: #000 solid 2px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #ffdead;
+}
+.sole1 {
+  width: 400px;
+  height: 70px;
+  border: #000 solid 2px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #ffdead;
+  color: black;
+}
+.sole2 {
+  width: 400px;
+  height: 70px;
+  border: #000 solid 2px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #ffdead;
+  color: black;
+}
+.toroida {
+  width: 200px;
+  height: 80px;
+  border: #000 solid 2px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #ffdead;
+}
+.lurus {
+  width: 350px;
+  height: 60px;
+  border: #000 solid 2px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #ffdead;
+  color: black;
+}
+.dua {
+  width: 200px;
+  height: 80px;
+  border: #000 solid 2px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #ffdead;
+  color: black;
+}
+.partikel {
+  width: 350px;
+  height: 60px;
+  border: #000 solid 2px;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: #ffdead;
+}
+.galva {
+  width: 100%;
+  height: 350px;
+  text-align: left;
+  background-color: #ffdead;
+  border: 3px solid #1a2a42;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-inline-end: 10px;
+  padding: 10px;
+}
+.ini {
+  background-color: #ffdead;
+  border: 2px solid #1a2a42;
+  text-align: center;
+}
+
+.petkon {
+  background-color: rgb(3, 31, 75);
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  width: 40%;
+  font-size: 13px;
+  padding: 10px;
+  margin-left: 80px;
+  margin-top: 5px;
+}
+
+.petkon:hover {
+  background-color: rgba(3, 31, 75, 0.61);
+}
+
+.modall {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: solid #000;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border: 1px solid transparent;
+  width: 58%;
+}
+.modal-content img {
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  border: px solid saddlebrown;
+  box-shadow: 7px 7px 5px 7px grey;
+}
+
+.close {
+  color: red;
+  float: right;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.petkon3 {
+  background-color: rgb(3, 31, 75);
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  width: 40%;
+  font-size: 13px;
+  padding: 10px;
+  margin-left: 80px;
+  margin-top: 5px;
+}
+
+.petkon3:hover {
+  background-color: rgba(3, 31, 75, 0.61);
+}
+
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-contentt {
+  background-color: solid white;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  border: 1px solid transparent;
+  width: 58%;
+}
+.modal-contentt img {
+  width: 700px;
+  height: 500px;
+  border-radius: 10px;
+  border: px solid saddlebrown;
+  box-shadow: 7px 7px 5px 7px grey;
+}
+
+.close3 {
+  color: red;
+  float: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#lat1 {
+  width: 900px;
+}
+
+.btn-lihat {
+  background-color: #ffdead;
+  border-radius: 5px;
+  border-color: #fff;
+}
+
+@media screen and (max-width: 700px) {
+  #isimateri {
+    width: 100%;
+    height: auto;
+  }
+  #lat1 {
+    width: auto;
+    font-size: 12px;
+  }
+
+  #isimateri2 {
+    width: auto;
+    height: auto;
+  }
+  .galva {
+    width: 100%;
+    height: auto;
+  }
+  .kwtlurus {
+    width: 80%;
+    height: 80%;
+    font-size: 12px;
+  }
+  .melingkar1 {
+    width: 85%;
+    height: 80%;
+    font-size: 12px;
+  }
+  .sole1 {
+    width: 85%;
+    height: auto;
+  }
+  .sole2 {
+    width: 85%;
+    height: auto;
+  }
+  .lurus {
+    width: 85%;
+    height: auto;
+    font-size: 12px;
+  }
+  .partikel {
+    width: 100%;
+  }
+  .rumus {
+    background-color: #1a2c42;
+    padding: 5px 5px;
+    border-bottom: 4px solid white;
+    color: #fcfcfc;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: "lucida sans";
+  }
+  .isirumus {
+    background-color: #d48166;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 7px 7px 5px grey;
+    font-size: 25px;
+    color: black;
+  }
+}

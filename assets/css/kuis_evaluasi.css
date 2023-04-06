@@ -1,0 +1,677 @@
+*{
+    list-style      : none;
+    text-decoration : none;
+    margin          : 0;
+    padding         : 0;
+    box-sizing      : border-box;
+    font-family     : 'Roboto Mono', monospace;
+  }
+  
+  body{
+    background      : #f5f6fa;
+  
+  }
+  
+  
+  .evaluasi{
+    background-color: #ff7d03;
+    color: black;
+    box-shadow          : 2px 2px 6px black;
+    font-size: 18px;
+    font-weight:bolder;
+    width: 15%;
+   text-align: center;
+   height: 70px;
+   margin-top: 20px;
+  
+  }
+  
+  
+  .container{
+    margin          : 20px;
+    background      : #C6DCE4;
+    padding         : 20px;
+    height          : 600px;
+    font-size       : 12pt;
+    overflow: hidden;
+  }
+  
+
+ 
+  .container p{
+    padding-top         : 20px;
+  }
+  .hilang{
+    display             :none;
+    }	
+ 
+  
+  .w3-panel {
+      width: 40%;
+      margin-top: 50px;
+      border: 2px dashed #000000;
+      background-color: #ff7d03;
+      text-align: justify;
+      float: right;
+      height: 380px;
+      position: relative;
+      right: 100px;
+
+  }
+
+  .w3-panel2 {
+    width: 40%;
+    margin-top: 50px;
+    border: 2px dashed #000000;
+    background-color: #ff7b00;
+    text-align: justify;
+    float: left;
+    height: 380px;
+    position: relative;
+    left: 100px;
+
+}
+
+
+  
+  .home{
+    margin-left: 1000px;
+    
+  }
+  .w3-button{
+      cursor: none;
+      color: white;
+      pointer-events: none;
+      position: relative;
+      left: 38%;
+      width: 15%;
+      margin-top: 5%;
+     
+  }
+
+  
+  .data{
+    margin-left: 20px; 
+    margin-right: 20px;
+  }
+
+  .button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: #fdba00;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+    position: relative;
+    top:15px;
+    font-weight: bolder;
+  }
+  
+  .button:hover {
+     
+      color: white;
+}
+  
+  .button:active {
+    background-color: #3bfd00;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+  }
+     
+  .button2 {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: #81CACF;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 5px #999;
+    position: relative;
+    top:15px;
+    font-weight: bolder;
+  }
+  
+  .button2:hover {
+    
+      color: white;
+    }
+  
+  .button2:active {
+    background-color: #81CACF;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+  }
+
+
+.isian{
+      
+  /* display             :none; */
+  text-align          :justify;
+  /* margin-top: 20px; */
+}
+
+
+/* .isiAktif{
+  display             :block
+} */
+
+.kiri{
+  float: left;
+  width: 75%;
+  background-color: white;
+  height: 645px; 
+  padding: 20px;
+  text-align: justify;
+  box-sizing: border-box;
+  border: 2px solid #c4a092;
+  overflow: auto;
+ 
+}
+
+.kanan {
+  float: right;
+  width: 25%;
+  background-color: white;
+  height: 645px;
+  padding: 15px;
+  text-align: justify;
+  box-sizing: border-box;
+  border: 2px solid #c4a092;
+
+}
+
+.disable {
+  background-color:  #A6D1E6 !important;
+  color: black !important;
+  cursor: default !important;
+}
+
+
+.bg_nav {
+    width: 99%;
+    background-color: #A6D1E6;
+    border-radius: 10px;
+}
+
+.bg_full {
+    width: 100%;
+    text-align: center;
+    color: black;
+    padding: 10px 0;
+    border: 2px dashed #A6D1E6;
+    background-color: #A6D1E6;
+
+}
+
+.text {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bg_soal {
+    width: 100%;
+    padding: 10px 0;
+    background-color: 	#fdc200;
+
+}
+
+.bg_soal span {
+    padding: 2px;
+    display: inline-block;
+    width: 60px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.soal_nav {
+    width: 14%;
+    height: 18%;
+    padding: 2px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    float: left;
+    margin-left: 8.5%;
+    margin-top: 10px;
+    box-sizing: border-box;
+}
+
+.soal_nav:hover {
+    cursor: pointer;
+    background-color: #c77b09;
+    color: white;
+}
+
+.belum {
+    background-color: white;
+}
+
+.fontsedang {
+    font-size: 16px;
+}
+
+.clear {
+    clear: both;
+}
+
+.ket {
+    width: 100%;
+    margin-left: 8.5%;
+    margin-top: 10px;
+}
+
+.sudah {
+    background-color: #c77b09;
+    color: white;
+}
+
+.selesai {
+  background-color: #81CACF; 
+  border: blue;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin-left: 25%;
+  font-weight: bold;
+}
+
+.selesai:hover {
+   
+    color: black;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.bg_pertanyaan {
+    width: 100%;
+}
+
+.no {
+    padding: 10px 0;
+}
+
+.no p {
+    margin-left: 24px !important;
+    font-size: 18px;
+}
+
+.inti_pertanyaan {
+    padding: 10px 20px;
+}
+
+.pertanyaannya {
+    /* border-left: 4px solid green; */
+    padding-left: 0px;
+    font-size: 18px;
+}
+
+.batas {
+    margin-top: 20px;
+    border-bottom: 1px solid #c77b09;
+}
+
+.lisoal li{
+    margin-left: 25px;
+}
+/* radio button */
+
+.bg_pilihan,
+.checkbox {
+    position: relative;
+    margin: 20px 0;
+    display: block;
+    font-size: 18px;
+    padding: -10px;
+}
+
+.bg_pilihan :hover,
+.checkbox:hover {
+    cursor: pointer;
+}
+
+
+.checkbox {
+    display: block;
+}
+
+.bg_pilihan input,
+.checkbox input {
+    position: absolute;
+    margin: 5px;
+    padding: 0;
+    visibility: hidden;
+}
+
+.bg_pilihan .textnya,
+.checkbox .textnya {
+    margin-left: 30px;
+    margin-bottom: 0;
+}
+
+.nav_pilihan,
+.fake-checkbox {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 3px;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #c77b09;
+    background-color: white;
+}
+
+.nav_pilihan:after,
+.fake-checkbox:after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    background: #c77b09;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.nav_pilihan {
+    border-radius: 50%;
+    
+}
+
+.nav_pilihan:after {
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked+span .nav_pilihan:after {
+    display: block;
+}
+
+/* akhir button */
+
+
+.nav_sebelum {
+    background-color: #fdba00;
+    color: black;
+    width: 25%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid  white;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 3%;
+}
+
+.nav_sebelum:hover {
+
+    color: white;
+}
+
+.nav_sebelum p {
+    font-size: 18px;
+}
+
+.nav_selanjut {
+    background-color: #81CACF;
+    color: black;
+    width: 25%;
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: 2px solid  white;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 3%;
+
+}
+
+.nav_selanjut:hover {
+  
+    color: white;
+}
+
+.nav_selanjut p {
+    font-size: 18px;
+}
+
+.time{
+  float: right;
+  width: 15%;
+  height: 30px;
+  color: black;
+  border: 2px dashed #c77b09;
+  
+}
+
+
+.dataaa {
+  min-height: 400px;
+  background-color: white;
+}
+
+.skornya {
+  margin-top: 10px;
+  margin-left: 0px;
+  font-size: 18px;
+  padding-top: 10px 0px;
+  min-height: 450px;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.t_hasil {
+  
+  box-shadow          : 2px 2px 6px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+  padding: 20px;
+  width: 50%;
+  text-align: justify;
+  border: 2px dashed #c77b09;
+      background-color: #F8EDE3;
+}
+
+.ket_hasil {
+  width: 40%;
+  font-size: 18px;
+  padding: 5px !important;
+}
+
+.ket_ulang{
+  font-size: 20px;
+}
+
+.full {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(134, 133, 133, 0.8);
+  position: fixed;
+  text-align: center;
+}
+
+.full p {
+  
+
+  display: inline-block;
+      font-size: 80px;
+      margin-top: 240px;
+      color: white;
+}
+
+.full a {
+  
+
+  display: inline-block;
+      font-size: 80px;
+      margin-top: 240px;
+      color: white;
+}
+.p{
+  display: inline;
+}
+
+.nomor{
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  
+}
+
+.kuis{
+  background-color: #c77b09; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  margin-left: 25%;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+  
+}
+
+.judul{
+  font-weight: bold;
+  font-size: 25px;
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: #c77b09;
+  box-shadow: 10px 10px #c4a092;
+  color: white;
+  text-shadow: 2px 2px black;
+  
+}
+
+.tmblUlang{
+    background-color: #FFA8A8;
+    color: white;
+    padding: 10px 30px 10px 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.tmblUlang{
+    text-decoration: none;
+    color: white;
+}
+
+.tmblUlang:hover{
+    background-color: #FFA8A8;
+  color: black;
+}
+
+  @media screen and (max-width: 992px) {
+    .home{
+      margin-left: 150px;
+    
+    }
+    .fase{
+      font-size: 12pt;
+      
+    }
+    .tujuan {
+      width               :100%;
+      
+    }
+    p{
+      text-align: justify;
+    }
+    .w3-panel {
+      width: 100%;
+      height: fit-content;
+      right: 0px;
+      
+
+    }
+
+    .w3-panel2 {
+      width: 100%;
+      height: 350px;
+      left: 0px;
+
+  }
+  .container{
+    overflow: auto;
+    width: 100%;
+  }
+
+ .w3-button{
+    width: fit-content;
+    margin-top: 50px;
+    margin-left: -20px;
+
+ }
+ .kiri{
+  width: 100%;
+ 
+  }
+
+  .kanan {
+    width: 100%;
+  
+  
+  }
+
+  .nav_sebelum {
+    width: 45%;
+}
+
+
+
+.nav_selanjut {
+    width: 45%;
+
+}
+
+.judul{
+  text-align: center;
+  
+}
+
+.t_hasil {
+  
+  width: 90%;
+}
+
+.evaluasi{
+  width: 40%;
+
+}
+    
+  }

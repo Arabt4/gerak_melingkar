@@ -1,0 +1,667 @@
+/* SETTING UMUM */
+@import url('https://fonts.googleapis.com/css2?family=Roboto\:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+
+body {
+    height: 100%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 400;
+    color: #202124;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+h2 {
+    padding-top: 10px;
+    padding-bottom: 1px;
+    text-decoration: #19B3D3;
+    font-size: 20px;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+.baris {
+    margin-top: 19px;
+    color: #000000;
+}
+.baris h4{
+    font-size: 17px;
+    font-weight: 600;
+    color: #000000;
+}
+
+
+
+/* --------------------------------------------- */
+/* CSS UNTUK HEADER */
+header {
+    z-index: 2;
+    position: fixed;
+    /* background-image: url(../../image/gambar/kayu1.jpg); */
+    padding: 20px;
+    /* width: 100%; */
+    background-color: #f7ae4f;
+    border: solid 2px rgb(85, 56, 13) ;
+    width: calc(100% - 0%);
+
+    top: 0;
+    height: 30px;
+}
+
+
+.judul_area h3 {
+    color: #000000;
+    margin: 0;
+    padding-left:27px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+.judul_area span {
+    color: rgb(5, 226, 255);
+}
+
+.logout_btn {
+    /* padding: 5px; */
+    text-decoration: none;
+    float: right;
+    margin-top: -50px;
+    margin-right: 40px;
+    font-size: 50px;
+    font-weight: 600 px;
+    color: #000000;
+    transition: 0.5s;
+}
+
+.logout_btn:hover {
+    color: #ffffff ;
+
+}
+
+/* CSS UNTUK SIDEBAR */
+.sidebar {
+    z-index: 1;
+    top: 0;
+    background-color: #f7ae4f;
+    /* background-image: linear-gradient(62deg, #fac06f  0%, #fac06f 100%); */
+    margin-top: 70px;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    width: 280px;
+    height: calc(100% - 9%);
+    transition: 0.5s;
+    transition-property: left;
+    overflow-y: auto;
+}
+
+/* .sidebar ul {
+    margin-top: -130px;
+}
+.sidebar li {
+    margin-top: 120px;
+    margin-bottom: -120px;
+} */
+
+.sidebar ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight:500;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+
+.numbering1 {
+    /* background: #19B3D3; */
+    width: 10%;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 600;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.numbering_text1{
+    display: inline-flex;
+    color: #000000;
+    width: 100%;
+    /*added by hifdzi*/
+    font-size: 15px;
+    text-align: left;
+    font-weight:800;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /* background-color: #4dca35; */
+}
+
+.numbering_text{
+    display: inline-flex;
+    margin-top: 4px;
+    color: #000000;
+    width: 100%;
+    /*added by hifdzi*/
+    font-size: 13px;
+    font-weight: 600;
+    text-align: left;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+nav ul ul li .numbering_text {
+    width: 80%;
+    margin-left: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    font-weight: 500;
+    /* padding: 0px; */
+    width: 100%;
+    padding: 10px;
+    border-left: 3px solid transparent;
+    text-align: justify;
+}
+
+/* nav ul li a:hover {
+    border-left-color: rgb(0, 195, 255);
+    background: #ff08d6;
+} */
+
+nav ul ul li a {
+    padding-left:13px;
+    font-size: 10 px;
+}
+
+li a i {
+    margin-left: 5px;
+}
+
+nav ul li ul {
+    display: none;
+}
+
+nav ul li ul.active {
+    display: inline-block;
+}
+
+
+/* Foto User */
+.profile_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nama User */
+
+.sidebar h3 {
+    color: #000000 ;
+    font-size: 25px;
+    letter-spacing: 5px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+/* CLOSED/OPEN MENU SIDEBAR */
+
+/* ketika button sidebar aktif */
+.menu-btn-active {
+    background-color:#ff8000;
+    margin-left: 7px;
+    border: solid 2px rgb(8, 8, 0);
+    border-radius: 2px;
+    width: 246px;
+   
+}
+.menu-btn-active-number{
+    background-color:#ff8000;
+    margin-left: 5px;
+    border: solid 2px rgb(0, 0, 0);
+    border-radius: 20px 20px 20px 20px;
+    margin-top: 4px;
+    width: 240px;
+    margin-left: 9px;
+}
+/* penutup aktif button sidebar */
+
+/* menu side bar */
+label #sidebar_btn {
+    z-index: 5;
+    color: rgb(0, 0, 0);
+    position: fixed;
+    cursor: pointer;
+    left: 20px;
+    top: 16px;
+    font-size: 43px;
+    transition: 0.6s;
+    transition-property: color;
+}
+
+/* Hover burger button */
+label #sidebar_btn:hover {
+    color: #ffffff ;
+}
+
+#check:checked~.sidebar {
+    left: -300px;
+}
+
+
+/* CONTENT */
+/* .gambar_perpindahan_sudut{
+    width: 5%;
+    height: 200px;
+}
+
+.gambar_penghantar {
+    width: 100%;
+    height: 200px;
+} */
+
+figure {
+    padding: 32px;
+    float: center;
+}
+
+figcaption {
+    text-align: center;
+}
+
+.content {
+    width: 100% - 400px;
+    margin-top: 70px;
+    padding: 20px;
+    margin-right: -10px;
+    margin-left: 278px;
+    /* background-image: url(../../image/gambar/blue.jpg); */
+    background: #ffffff;
+    background-position: center;
+    background-size: cover;
+    transition: 0.4s;
+    min-height: calc(100vh - 110px);
+    font-size: 18px;
+}
+
+.content p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.content ul li{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#check:checked~.content {
+    margin-left: 0px;
+}
+
+#check {
+    display: none;
+}
+
+/*added by hifdzi*/
+.button-utama {
+    background-color: tomato;
+    border: none;
+    color: white;
+    padding: 8px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.button-utama:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.jawaban-benar {
+    color: green;
+}
+
+.container-baru {
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.box {
+    flex-grow: 1;
+}
+
+/* ADDITIONAL after bar mobile DONE */
+.mobile_nav {
+    display: none;
+}
+
+.content .card {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.card-header {
+    padding: 13px;
+    background-color: #f7ae4f;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px 20px 0 0 ;
+    color: rgb(0, 0, 0);
+}
+
+#contoh-soal{
+    cursor: pointer;
+    padding: 10px; 
+    background-color: #f38508; 
+    background-image: linear-gradient(130deg, #f38508 0%, #ff8800 100%); 
+    margin-right: 7px; 
+    padding: 5px;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px 10px 0 0;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.aktif{
+    background-color: #f1c40f;
+}
+
+.contoh-soal-content{
+    margin-top:-10px;
+}
+.latihan-content {
+    margin-top:-10px;
+} 
+
+.latihan2-content {
+    margin-top:-10px;
+} 
+
+#latihan{
+    cursor: pointer;
+    padding: 10px; 
+    background-color: #f38508; 
+    background-image: linear-gradient(130deg, #f38508 0%, #ff8800 100%); 
+    margin-right: 7px; 
+    padding: 5px;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px 10px 0 0;
+    color: rgb(0, 0, 0);
+}
+
+#latihan2{
+    cursor: pointer; 
+    background-color: #f38508; 
+    background-image: linear-gradient(130deg, #f38508 0%, #ff8800 100%); 
+    padding: 7px;
+    width: fit-content;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px 10px 0 0;
+    color: rgb(0, 0, 0);
+}
+input{
+    height:20px;
+    width:60px; 
+    text-align:center; 
+    border-radius: 10%;
+    border: solid 2px #c56300;
+}
+
+.content-card h2{
+    margin-top: -10px;
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    font-weight: 600;
+}
+.content-card {
+    /* background-image: url(../../image/gambar/kayu2.jpg); */
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    border: 2px solid #f7ae4f ;
+    color: rgb(0, 0, 0);
+    font-weight: 300;
+    
+}
+.content-card2 {
+    background: white;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+    border: 2px solid #4dca35 ; 
+}
+.btn {
+    box-sizing: border-box;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    background-color: #4dca35 ;
+    border: 2px solid #e74c3c;
+    border-radius: 0.6em;
+    color: #e74c3c;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+  }
+  .btn:hover, .btn:focus {
+    color: #fff;
+    outline: 0;
+  }
+  .fourth {
+    border-color: #f1c40f;
+    color: #fff;
+    background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+    background-position: 100%;
+    background-size: 400%;
+  }
+  .fourth:hover {
+    background-position: 0;
+  }
+.content-card li {
+    margin-left: 30px;
+}
+
+.baris p{ 
+    text-decoration: none;
+    list-style-type:none;
+    text-align: justify;
+    text-indent: 15px;
+    line-height: 2;
+}
+.baris_langkah p{ 
+    text-decoration: none;
+    list-style-type:none;
+    text-align: justify;
+    line-height: 2;
+}
+
+.baris ul li{
+    line-height: 1.5;
+}
+
+.baris_langkah ul li{
+    line-height: 1.5;
+    list-style: decimal;
+}
+
+.botton_db button{
+  background-color: rgb(160, 85, 14); /* Green */
+  border: none;
+  color: white;
+  padding: 16px 28px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: solid 2px  black ;
+  border: dashed black;
+  border-radius: 30px;
+}
+.botton_db button:hover {
+    background: rgb(255, 125, 4);
+    color: white;
+}
+
+.botton_db input{
+    border: solid 10px rgb(255, 0, 0);
+    border-radius: 5px;
+    color: #000000;
+    background-color:#e7e7e7;
+    font-size: 16px;
+}
+
+
+.footer-nav {
+    background-image: url(../../image/gambar/kayu1.jpg);
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-number {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(3, 3, 3);
+    background-color: #e7e7e7;
+    padding: 8px;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+.footer-number:hover {
+    background: rgb(160, 85, 14);
+    color: white;
+}
+
+
+.content-card img,
+.content-card iframe {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* RESOPNSIVE CSS */
+
+@media screen and (max-width: 780px) {
+    .sidebar {
+        display: none;
+    }
+
+    #sidebar_btn {
+        display: none;
+    }
+
+    /* .judul_area{
+        width: 450px;
+    } */
+    .content {
+        margin-left: 0;
+        margin-top: 70px;
+        padding: 10px 20px;
+        transition: 0s;
+    }
+
+    video {
+        width: 400px;
+    }   
+
+    #check:checked~.content {
+        margin-left: 0;
+    }
+
+    .mobile_nav {
+        display: block;
+        width: calc(100% - 0%);
+    }
+
+    .nav_bar {
+        background: #222;
+        width: (100% - 0px);
+        margin-top: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+
+    .nav_bar .mobile_profile_image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+    }
+
+    .nav_bar .nav_btn {
+        color: #4dca35;
+        font-size: 22px;
+        cursor: pointer;
+        transition: 0.5s;
+        transition-property: color;
+    }
+
+    .nav_bar .nav_btn:hover {
+        color: #19B3D3;
+    }
+
+    .mobile_nav_items {
+        background: #2F323A;
+        /* ADDING AFTER NAV BAR DONE */
+        display: none;
+    }
+
+    .mobile_nav_items a {
+        color: #fff;
+        display: block;
+        text-align: center;
+        letter-spacing: 1px;
+        line-height: 60px;
+        text-decoration: none;
+        box-sizing: border-box;
+        transition: 0.5s;
+        transition-property: background;
+    }
+
+    .mobile_nav_items a:hover {
+        background: #19B3D3;
+    }
+
+    .mobile_nav_items i {
+        padding-right: 10px;
+    }
+
+    .active {
+        display: block;
+    }
+
+}
+

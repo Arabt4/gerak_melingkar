@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERIODE DAN FREKUENSI</title>
+    <link rel="icon" type="image/png" href="image/debian.png">
+    <link rel="stylesheet" href="assets/css/style_materi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- ADDITIONAL JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="UTF-8"></script>
+    <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-chtml.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/latihan_frekuensi.js"></script>
+    <script src="assets/js/printThis.js"></script>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+        };
+        </script>
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body>
+    <!-- HEADER AREA START-->
+    <input type="checkbox" id="check">
+    <header>
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        <div class="judul_area">
+            <h3>GERAK MELINGKAR</h3>
+        </div>
+        <div class="right_area">
+            <a href="index.html" class="logout_btn">
+                <i class="fas fa-home"></i>
+            </a>
+        </div>
+           </header>
+    <!-- HEADER AREA END -->
+
+    <!-- SIDEBAR START -->
+    <nav class="sidebar">
+        <div class="profile_info">
+            <h3>MATERI</h3>
+            <hr style="width: 90%; color: #fc7f03; margin: 5px 0 5px 0;">
+        </div>
+        <ul>
+            <li><a href="penghantar.html" class="menu-btn"><span class="numbering_text1"> PENGHANTAR</span></a>
+            <li><a href="besaran_gerak_melingkar.html" class="menu-btn-active"><span class="numbering_text1">BESARAN GERAK MELINGKAR<i class="fas fa-caret-down"></i></span></a>
+                <ul class="menu-show" style="display:block;">
+                    <li><a href="#" class="menu-btn-active-number" ><span class="numbering1">1.1</span><span class="numbering_text">PERIODE DAN FREKUENSI</span></a></li>
+                    <li><a href="perpindahan sudut.html"><span class="numbering1">1.2</span><span class="numbering_text">PERPINDAHAN SUDUT</span></a></li>
+                    <li><a href="kecepatan sudut rata rata.html"><span class="numbering1">1.3</span><span class="numbering_text">KECEPATAN SUDUT RATA RATA</span></a></li>
+                    <li><a href="#"><span class="numbering1"></span><span class="numbering_text">KUIS 1</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#"class="menu-btn"><span class="numbering_text1">GERAK MELINGKAR BERATURAN<i class="fas fa-caret-down"></i></span></a>
+                <ul class="menu-show">
+                    <li><a href="gerak melingkar beraturan.html"><span class="numbering1">2.1</span><span class="numbering_text">PERPINDAHAN LINEAR DAN PERPINDAHAN SUDUT</span></a></li>
+                    <li><a href="kecepatan linear kecepatan sudut.html"><span class="numbering1">2.2</span><span class="numbering_text">KECEPATAN LINEAR DAN KECEPATAN SUDUT</span></a></li>
+                    <li><a href="percepatan sentripetal.html"><span class="numbering1">2.3</span><span class="numbering_text">PERCEPATAN SENTRIPETAL</span></a></li>
+                    <li><a href="#"><span class="numbering1"></span><span class="numbering_text">KUIS 2</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="menu-btn"><span class="numbering_text1">HUBUNGAN RODA RODA<i class="fas fa-caret-down"></i></span></a>
+                <ul class="menu-show">
+                    <li><a href="hubungan roda.html"><span class="numbering1">3.1</span><span class="numbering_text">HUBUNGAN RODA RODA SEPUSAT</span></a></li>
+                    <li><a href="hubungan roda bersinggungan.html"><span class="numbering1">3.2</span><span class="numbering_text">HUBUNGAN RODA RODA YANG BERSINGGUNGAN</span></a></li>
+                    <li><a href="hubungan roda rantai.html"><span class="numbering1">3.3</span><span class="numbering_text">HUBUNGAN RODA RODA YANG YANG DIHUBUNGKAN DENGAN RANTAI</span></a></li>
+                    <li><a href="#"><span class="numbering1"></span><span class="numbering_text">KUIS 3</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="menu-btn"><span class="numbering_text1"></span></a>
+               <ul class="menu-show">
+               </ul>
+           </li>
+    </nav>
+    <!-- SIDEBAR END -->
+    <!-- CONTENT AREA START-->
+    <div class="content">
+        <div class="card-header">BESARAN DALAM GERAK MELINGKAR</div>
+        <div class="content-card">
+            <h2 style="color: #000000;">PERIODE DAN FREKUENSI</h2>
+            <div class="baris">
+                <center>
+                    <iframe src="https://scratch.mit.edu/projects/827662469/embed" allowtransparency="true" 
+                    width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+                    <caption><i>2. Video Frekuensi dan Periode</i></caption>
+                </center>
+                <h4>PERIODE DAN FREKUENSI</h4>
+                <P><b>Periode</b> <i>(T)</i> adalah selang waktu yang diperlukan suatu benda untuk menempuh satu putaran. Satuan besaran ini adalah sekon. </P>
+               <center>
+                <table border="1" style="background-color:#f7ae4f;">
+                    <tr>
+                        <td>
+                            <p style="text-align: center; font-size:25px;"> $T = \frac{\mathrm{Waktu\ }}{\mathrm{Jumlah\ Putaran}}$ atau $T = \frac{\mathrm{t}}{\mathrm{n}}$ &nbsp;&nbsp;&nbsp;</p>
+                        </td>
+                    </tr>
+                </table>
+               </center>
+                <p>Sebagai contoh sebuah benda menempuh satu kali gerakan melingkar memerlukan waktu 10 sekon, maka Periode benda tersebut adalah 10.</p>
+                <P><b>Frekuensi </b><i>(f)</i> adalah banyaknya putaran yang dapat dilakukan oleh suatu benda   dalam waktu 1 sekon. Satuan untuk besaran Frekuensi adalah hertz (Hz).</P>
+                <center>
+                    <table border="1" style="background-color:#f7ae4f;">
+                        <tr>
+                            <td>
+                                <p style="text-align: center; font-size:25px;"> $f = \frac{\mathrm{Jumlah \ Putaran\ }}{\mathrm{Waktu\ }}$ atau $f=\frac{\mathrm{n}}{\mathrm{t}}$ &nbsp;&nbsp;&nbsp;</p>
+                            </td>
+                        </tr>
+                    </table>
+                   </center>
+                   <p>Sebagai contoh dalam 1 detik suatu benda dapat mengelilingi lingkaran sebayak 2 kali, maka frekuensi benda tersebut adalah 2.</p>
+                   <p>Dari kedua persamaan tersebut terdapat hubungan antara periode dan frekuensi:</p>
+                   <center>
+                    <table border="1" style="background-color:#f7ae4f;">
+                        <tr>
+                            <td>
+                                <p style="text-align: center; font-size:25px;">$f = \frac{1}{T}$  atau $T = \frac{1}{f}$ &nbsp;&nbsp;&nbsp;</p>
+                            </td>
+                        </tr>
+                    </table>
+                   </center>
+            </div>
+        </div>
+
+        <div class="card-heade" style="display: flex;">
+            <div id="contoh-soal" class="aktif">           
+                CONTOH SOAL
+            </div>
+            <div id="latihan">
+                LATIHAN 1
+            </div>
+            <div id="latihan2">
+                LATIHAN 2
+            </div>
+        </div>
+            <div class="content-card">
+                <div class="baris contoh-soal-content">
+                    <P style="text-indent: 0%;">Bakri memacu sepeda motornya pada lintasan yang berbentuk lingkaran dalam waktu 1 jam. Dalam waktu tersebut, Bakri telah melakukan 120 putaran. Tentukan periode, frekuensi Bakri jika lintasan tersebut memiliki diameter 800 m!
+                        <br> Diketahui : 	
+                        <br> a. d = 800 m ↔ r = 400 m 
+                        <br> b. t = 1 jam = 3600 s 
+                        <br> c. n = 120 putaran 
+                        <br>Ditanyakan :	 
+                        <br> a. T = …?
+                        <br> b. f  = …? 
+                        <br> Jawab :
+                        <br> a. <i>T</i> $= \frac{\mathrm{t}}{\mathrm{n}}\mathrm{\ }= \frac{\mathrm{3600}}{\mathrm{120}}\mathrm{\ } = $ 30 s
+                        <br> b. <i>f</i> $= \frac{1}{t}\ \ = \frac{1}{30}\ \ $ Hz
+                        </P>
+                </div>
+                <div class="baris latihan-content" style="display: none;">
+                    <P style="text-indent: 0%; ">
+                        Asep mengayuh sepedanya pada lintasan yang berbentuk lingkaran dalam waktu 30 menit. Dalam waktu tersebut, Asep telah melakukan 60 putaran. Tentukan periode, frekuensi Asep jika lintasan tersebut memiliki diameter 1 km!
+                       <br> Diketahui:
+                       <br>
+                       <form id="form">
+                        <var>t</var> \(=\) <input type="text" name="a1" size="2" class="jwbn" id="b1" onchange="cek1()"> menit \(  =\) <input type="text" name="a2" size="2" class="jwbn" id="b2" onchange="cek2()"> s<br><br>
+                        <var>n</var> \(=\) <input type="text" name="a3" size="2" class="jwbn" id="b3" onchange="cek3()"> putaran  <br><br>
+                        <var>d</var> \(=\) <input type="text" name="a4" size="2" class="jwbn" id="b4" onchange="cek4()"> m ↔  r \(  =\) <input type="text" name="a5" size="2" class="jwbn" id="b5" onchange="cek5()"> m<br><br>
+                        Ditanya: 
+                        <br>
+                        <br> a. T = ...?
+                        <br>
+                        <br> b. f = ...?
+                        <br>
+                        <br>Jawab: 
+                  <table>
+                    <tr >
+                        <!-- atas -->
+                        <td style=" font-size: 18px;color:black" rowspan="2">a. T \( =\)</td>
+                        <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                            <input style="margin-bottom:4px;" type="text" name="a6" size="2" class="jwbn" id="b6" onchange="cek6()"></td>
+                        
+                        <td style=" font-size: 18px;color:black" rowspan="2"> \(=\)</td>
+                        <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                            <input style="margin-bottom:4px;"  type="text" name="a7" size="2" class="jwbn" id="b7" onchange="cek7()"></td>
+                        
+                        <td style=" font-size: 18px;color:black" rowspan="2"> \(=\)</td>
+                        <td style=" font-size: 18px;color:black" rowspan="2" ><input type="text" name="a8" size="2" class="jwbn" id="b8" onchange="cek8()"> s</td>
+                    </tr>
+                    <tr>
+                        <!-- bawah -->
+                        <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="a9" size="2" class="jwbn" id="b9" onchange="cek9()"> 
+                        <td style=" font-size: 18px;color:black" rowspan="1"> <input type="text" name="a10" size="2" class="jwbn" id="b10" onchange="cek10()"> 
+                    </tr>
+                     </table>
+                     <br>
+                     <table>
+                        <tr >
+                            <td style=" font-size: 18px;color:black" rowspan="2">b. f \( =\)</td>
+                            <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                                <input style="margin-bottom:4px;" type="text" name="a11" size="2" class="jwbn" id="b11" onchange="cek11()"></td>
+                            
+                            <td style=" font-size: 18px;color:black" rowspan="2"> \(=\)</td>
+                            <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                                <input style="margin-bottom:4px;"  type="text" name="a12" size="2" class="jwbn" id="b12" onchange="cek12()"></td>
+                            
+                            <td style=" font-size: 18px;color:black" rowspan="2" > &nbsp Hz</td>
+                       
+                        </tr>
+                        <tr>
+                            <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="a14" size="2" class="jwbn" id="b14" onchange="cek14()"> 
+                            <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="a15" size="2" class="jwbn" id="b15" onchange="cek15()"> 
+                        </tr>
+                         </table>
+                         <!-- <input type="button" onclick="myFunction()" value="Reset form"> -->
+                    </form>
+                </div>
+                <div class="baris latihan2-content" style="display: none;">
+                    <P style="text-indent: 0%;">
+                        Kipas angin mampu berputar sebanyak 300 rpm. Frekuensi dan periode kipas angin tersebut adalah...
+                         <br> Diketahui:
+                         <br> 
+                       <form id="form1">
+                        <var>n</var> \(=\) <input type="text" name="aa1" size="2" class="jwbn" id="bb1" onchange="ccek1()"> putaran <br><br>
+                        <var>t</var> \(=\) <input type="text" name="aa2" size="2" class="jwbn" id="bb2" onchange="ccek2()"> menit \(  =\) <input type="text" name="aa3" size="2" class="jwbn" id="bb3" onchange="ccek3()"> s <br><br>
+                        Ditanya: 
+                        <br>
+                        <br> a. f = ...?
+                        <br>
+                        <br> b. T = ...?
+                        <br>
+                        <br>Jawab: 
+                        <br>
+                  <table>
+                    <tr >
+                        <!-- atas -->
+                        <td style=" font-size: 18px;color:black" rowspan="2">a. f \( =\)</td>
+                        <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                            <input style="margin-bottom:4px;" type="text" name="aa4" size="2" class="jwbn" id="bb4" onchange="ccek4()"></td>
+                        
+                        <td style=" font-size: 18px;color:black" rowspan="2"> \(=\)</td>
+                        <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                            <input style="margin-bottom:4px;"  type="text" name="aa5" size="2" class="jwbn" id="bb5" onchange="ccek5()"></td>
+                        
+                        <td style=" font-size: 18px;color:black" rowspan="2"> \(=\)</td>
+                        <td style=" font-size: 18px;color:black" rowspan="2" ><input type="text" name="aa6" size="2" class="jwbn" id="bb6" onchange="ccek6()"> Hz</td>
+                    </tr>
+                    <tr>
+                        <!-- bawah -->
+                        <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="aa7" size="2" class="jwbn" id="bb7" onchange="ccek7()"> 
+                        <td style=" font-size: 18px;color:black" rowspan="1"> <input type="text" name="aa8" size="2" class="jwbn" id="bb8" onchange="ccek8()"> 
+                    </tr>
+                     </table>
+                     <br>
+                     <table>
+                        <tr >
+                            <!-- atas -->
+                            <td style=" font-size: 18px;color:black" rowspan="2">b. T \( =\)</td>
+                            <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                                <input style="margin-bottom:4px;" type="text" name="aa9" size="2" class="jwbn" id="bb9" onchange="ccek9()"></td>
+                            
+                            <td style=" font-size: 18px;color:black" rowspan="2"> \(=\)</td>
+                            <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                                <input style="margin-bottom:4px;"  type="text" name="aa10" size="2" class="jwbn" id="bb10" onchange="ccek10()"></td>
+                            
+                            <td style=" font-size: 18px;color:black" rowspan="2" > &nbsp s</td>
+                        </tr>
+
+                        <tr>
+                            <!-- bawah -->
+                            <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="aa11" size="2" class="jwbn" id="bb11" onchange="ccek11()"> 
+                            <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="aa12" size="2" class="jwbn" id="bb12" onchange="ccek12()"> 
+                        </tr>
+                         </table>
+                         <!-- <input type="button" onclick="myFunction()" value="Reset form"> -->
+                    </form>
+                    <br>
+                    <center>
+                    <div class="botton_db">
+                        <br>
+                        <button id="btn-print-this" class="btnunduh">Download</button>
+        
+                        <button id="upbtn" class="btnupload">Upload</button>
+        
+                        <button id="selbtn" class="btnpilih">Pilih File</button>
+                      
+                        <input type="text" style="box-shadow : 2px 2px 6px rgba(0, 0, 0, 0.4);border: none; height: 40px; width: fit-content;" id="namebox"> <label id="extlab"></label>
+                        <span id="myimg"><label id="upprogress"></label></span>
+                   
+                       <br>
+                        <br>
+                    </center>
+                    </div>
+                 </div>
+            
+        <div class="footer-nav">
+            <a href="perpindahan sudut.html" class="footer-number">Selanjutnya</a>
+        </div>
+    </div>
+    <!-- CONTENT AREA END -->
+    
+    <!-- JAVASCRIPT AREA START-->
+    <script type="text/javascript">
+
+    //dropdown menu
+    $(document).ready(function () {
+        $(".menu-btn").click(function () {
+            if ($(this).siblings(".menu-show").css("display") == "block") {
+                $(this).siblings(".menu-show").css("display", "none");
+            } else {
+                $('.menu-show').css("display", "none");
+                $(this).siblings(".menu-show").css("display", "block");
+            }
+        });
+
+        $("li ul li").click(function () {
+            $("li ul li").removeClass("active");
+            $(this).addClass("active");
+        });
+    
+        $('.nav_btn').click(function () {
+            $('.mobile_nav_items').toggleClass('active');
+        });
+    });  
+    </script>
+
+    <!-- javascript reset form -->
+    <script>document.getElementById("form").reset()</script> 
+    <script>document.getElementById("form1").reset()</script> 
+
+   <!-- java script menu latihan	 -->
+    <script>
+        const divContohSoal =  document.getElementById("contoh-soal");
+        const divLatihan =  document.getElementById("latihan");
+        const divLatihan2 = document.getElementById("latihan2")
+
+        divContohSoal.addEventListener("click", function() {
+            document.querySelector(".contoh-soal-content").style.display = "block";
+            document.querySelector(".latihan-content").style.display = "none";
+            document.querySelector(".latihan2-content").style.display ="none";
+            
+            document.querySelector(".contoh-soal-content").classList.add("animate__fadeIn");
+            document.querySelector(".latihan-content").classList.remove("animate__fadeIn"); 
+        });
+        
+        divLatihan.addEventListener("click", function() {
+            document.querySelector(".contoh-soal-content").style.display = "none";
+            document.querySelector(".latihan-content").style.display = "block";
+            document.querySelector(".latihan2-content").style.display ="none";
+
+        });
+
+        divLatihan2.addEventListener("click", function() {
+            document.querySelector(".contoh-soal-content").style.display = "none";
+            document.querySelector(".latihan-content").style.display = "none";
+            document.querySelector(".latihan2-content").style.display ="block";
+        });
+    </script>
+
+    <!-- javascript print -->
+    <script>
+        $(document).ready(function(){
+        $('#btn-print-this').click(function(){
+            $('.latihan2-content').printThis();
+        });
+      });
+     </script>
+ 
+     <!-- firebase -->
+     <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBPsyT3idkbKgIs6Tv9VYUGBYJEwGmVwKk",
+            authDomain: "gerakmelingkar-af778.firebaseapp.com",
+            databaseURL: "https://gerakmelingkar-af778-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "gerakmelingkar-af778",
+            storageBucket: "gerakmelingkar-af778.appspot.com",
+            messagingSenderId: "642003937999",
+            appId: "1:642003937999:web:50fc9c9e8e1fe5dbb465ba"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        import { getStorage, ref as sRef, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-storage.js";
+
+        //Firebase Realtime Database
+        import { getDatabase, ref, child, get, set } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+        const db = getDatabase();
+
+        //FUNGSI WAKTU DAN HARI
+            var d = new Date();
+            var t = d.getTime();
+            var counter = t;
+
+            // ambil jamnya
+            window.setTimeout("waktu()", 1000);
+
+            function waktu() {
+                var tanggal = new Date();
+                setTimeout("waktu()", 1000);
+                return (tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal.getSeconds());
+            }
+
+            // harinya
+            function hari() {
+                let tanggallengkap = new String();
+                let namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+                namahari = namahari.split(" ");
+                let namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+                namabulan = namabulan.split(" ");
+                let tgl = new Date();
+                let hari = tgl.getDay();
+                let tanggal = tgl.getDate();
+                let bulan = tgl.getMonth();
+                let tahun = tgl.getFullYear();
+                tanggallengkap = namahari[hari] + ", " + tanggal + " " + namabulan[bulan] + " " + tahun;
+                return (tanggallengkap);
+            }
+
+            let waktunya = waktu();
+            let harinya = hari();
+
+                //Variables & Reference
+
+                var files = [];
+                var reader = new FileReader();
+
+                var namebox = document.getElementById('namebox');
+                var extlab = document.getElementById('extlab');
+                var myimg = document.getElementById('myimg');
+                var proglab = document.getElementById('upprogress');
+                var SelBtn = document.getElementById('selbtn');
+                var UpBtn = document.getElementById('upbtn');
+                var DownBtn = document.getElementById('downbtn');
+
+                var input = document.createElement('input');
+                input.type = 'file';
+
+                input.onchange = e =>{
+                    files = e.target.files;
+
+                    var extention = GetFileExt(files[0]);
+                    var name = GetFileName(files[0]);
+
+                    namebox.value= name;
+                    extlab.innerHTML = extention;
+
+                    reader.readAsDataURL(files[0]);
+                }
+                reader.onload = function(){
+                    myimg.src = reader.result;
+                }
+
+                //Selection
+                SelBtn.onclick = function(){
+                  input.click();
+                }
+
+                function GetFileExt(file){
+                    var temp = file.name.split('.');
+                    var ext = temp.slice((temp.length-1),(temp.length));
+                    return '.' + ext[0];
+                }
+
+                function GetFileName(file){
+                    var temp = file.name.split('.');
+                    var fname = temp.slice(0,-1).join('.');
+                    return fname;
+                }
+                function validasi(){
+    
+  
+                if (namebox.value == "")
+                
+                {
+                  alert("silahkan pilih file");
+                  return false;
+                }
+
+                return true;
+              }
+
+            async function UploadProcess(){
+                  if (!validasi()){
+                  return;
+              };
+
+                  //FUNGSI WAKTU DAN HARI
+            var d = new Date();
+            var t = d.getTime();
+            var counter = t;
+
+            // ambil jamnya
+            window.setTimeout("waktu()", 1000);
+
+            function waktu() {
+                var tanggal = new Date();
+                setTimeout("waktu()", 1000);
+                return (tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal.getSeconds());
+            }
+
+            // harinya
+            function hari() {
+                let tanggallengkap = new String();
+                let namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+                namahari = namahari.split(" ");
+                let namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+                namabulan = namabulan.split(" ");
+                let tgl = new Date();
+                let hari = tgl.getDay();
+                let tanggal = tgl.getDate();
+                let bulan = tgl.getMonth();
+                let tahun = tgl.getFullYear();
+                tanggallengkap = namahari[hari] + ", " + tanggal + " " + namabulan[bulan] + " " + tahun;
+                return (tanggallengkap);
+            }
+
+            let waktunya = waktu();
+            let harinya = hari();
+            
+            // upload file
+
+            var ImgToUpload = files[0];
+            var name = namebox.value;
+
+            const metaData ={
+                contentType: ImgToUpload.type
+            }
+
+            const storage = getStorage();
+
+            const storageRef = sRef(storage, "Tugas_1/"+name);
+
+            const UploadTask = uploadBytesResumable(storageRef, ImgToUpload, metaData);
+
+            UploadTask.on('state-changed', (snapshot)=>{
+                var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                proglab.innerHTML = "Upload"+ progress + "%";
+            },
+
+          
+            (error) =>{
+                alert("error : File not uploaded");
+            },
+
+            ()=>{
+                getDownloadURL(UploadTask.snapshot.ref).then((downloadURL)=>{
+                  const fullnama =  sessionStorage.getItem('nama');
+                  const niss     =  sessionStorage.getItem('nis');
+                  const kelass   =  sessionStorage.getItem('kelas');
+                  const sekolahh =  sessionStorage.getItem('sekolah');
+                    set(ref(db,"Tugas_1/"+name),{
+                      
+                        namasiswa:fullnama,
+                        nis:niss,
+                        kelas:kelass,
+                        sekolah:sekolahh,
+                        nama:name,
+                        link:downloadURL,
+                        waktu: waktunya,
+                        hari:harinya,
+                    });
+
+                    // $('#exampleModal').modal('hide');
+                    alert("sukses");
+
+                });
+            }
+            );
+        
+      }
+
+      UpBtn.onclick = UploadProcess;
+
+        const fullnama =  sessionStorage.getItem('nama');
+        const niss     =  sessionStorage.getItem('nis');
+        const kelass   =  sessionStorage.getItem('kelas');
+        const sekolahh =  sessionStorage.getItem('sekolah');
+
+        const Btn = document.getElementById('Btn');
+        const Btn2 = document.getElementById('Btn2');
+
+        function submit(){
+                    set(ref(db,"TekananHidro/"+niss),{
+                        
+                namasiswa:fullnama,
+                nis:niss,
+                kelas:kelass,
+                sekolah:sekolahh,
+                skor:Math.floor(skor1),
+                waktu: waktunya,
+                hari:harinya,
+            });
+        }
+
+        
+//Assign the events
+Btn.addEventListener('click', submit);
+
+function kirim(){
+              set(ref(db,"TekananHidro2/"+niss),{
+                
+                namasiswa:fullnama,
+                nis:niss,
+                kelas:kelass,
+                sekolah:sekolahh,
+                skor:Math.floor(skor2),
+                waktu: waktunya,
+                hari:harinya,
+            });
+        }
+
+        
+//Assign the events
+Btn2.addEventListener('click', kirim);
+
+      //MENAMBAHKAN NAMA USER
+     
+      </script>
+</body>
+</html>

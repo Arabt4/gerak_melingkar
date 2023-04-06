@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KECEPATAN SUDUT RATA RATA</title>
+    <link rel="icon" type="image/png" href="image/debian.png">
+    <link rel="stylesheet" href="assets/css/style_materi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- ADDITIONAL JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="UTF-8"></script>
+    <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-chtml.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/latihan_sudutrata.js"></script>
+    <script src="assets/js/printThis.js"></script>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+        };
+        </script>
+        <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+        </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    
+</head>
+<body>
+    <!-- HEADER AREA START-->
+    <input type="checkbox" id="check">
+    <header>
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        <div class="judul_area">
+            <h3>GERAK MELINGKAR</h3>
+        </div>
+        <div class="right_area">
+            <a href="index.html" class="logout_btn">
+                <i class="fas fa-home"></i>
+            </a>
+        </div>
+           </header>
+    <!-- HEADER AREA END -->
+
+    <!-- SIDEBAR START -->
+    <nav class="sidebar">
+        <div class="profile_info">
+            <h3>MATERI</h3>
+            <hr style="width: 90%; color: #fc7f03; ; margin: 5px 0 5px 0;">
+        </div>
+        <ul>
+            <li><a href="penghantar.html" class="menu-btn"><span class="numbering_text1"> PENGHANTAR</span></a>
+            <li><a href="#" class="menu-btn-active"><span class="numbering_text1">BESARAN GERAK MELINGKAR<i class="fas fa-caret-down"></i></span></a>
+                <ul class="menu-show" style="display:block;">
+                    <li><a href="besaran_gerak_melingkar.html"><span class="numbering1">1.1</span><span class="numbering_text">PERIODE DAN FREKUENSI</span></a></li>
+                    <li><a href="perpindahan sudut.html"><span class="numbering1">1.2</span><span class="numbering_text">PERPINDAHAN SUDUT</span></a></li>
+                    <li><a href="#" class="menu-btn-active-number"><span class="numbering1">1.3</span><span class="numbering_text">KECEPATAN SUDUT RATA RATA</span></a></li>
+                    <li><a href="#"><span class="numbering1"></span><span class="numbering_text">KUIS 1</span></a></li>
+                </ul>
+            </li>
+            <li><a href="gerak melingkar beraturan.html"class="menu-btn"><span class="numbering_text1">GERAK MELINGKAR BERATURAN<i class="fas fa-caret-down"></i></span></a>
+                <ul class="menu-show">
+                    <li><a href="gerak melingkar beraturan.html"><span class="numbering1">2.1</span><span class="numbering_text">PERPINDAHAN LINEAR DAN PERPINDAHAN SUDUT</span></a></li>
+                    <li><a href="kecepatan linear kecepatan sudut.html"><span class="numbering1">2.2</span><span class="numbering_text">KECEPATAN LINEAR DAN KECEPATAN SUDUT</span></a></li>
+                    <li><a href="percepatan sentripetal.html"><span class="numbering1">2.3</span><span class="numbering_text">PERCEPATAN SENTRIPETAL</span></a></li>
+                    <li><a href="#"><span class="numbering1"></span><span class="numbering_text">KUIS 2</span></a></li>
+                </ul>
+            </li>
+            <li><a href="hubungan roda.html" class="menu-btn"><span class="numbering_text1">HUBUNGAN RODA RODA<i class="fas fa-caret-down"></i></span></a>
+                <ul class="menu-show">
+                    <li><a href="hubungan roda.html"><span class="numbering1">3.1</span><span class="numbering_text">HUBUNGAN RODA RODA SEPUSAT</span></a></li>
+                    <li><a href="hubungan roda bersinggungan.html"><span class="numbering1">3.2</span><span class="numbering_text">HUBUNGAN RODA RODA YANG BERSINGGUNGAN</span></a></li>
+                    <li><a href="hubungan roda rantai.html"><span class="numbering1">3.3</span><span class="numbering_text">HUBUNGAN RODA RODA YANG YANG DIHUBUNGKAN DENGAN RANTAI</span></a></li>
+                    <li><a href="#"><span class="numbering1"></span><span class="numbering_text">KUIS 3</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="menu-btn"><span class="numbering_text1">EVALUASI</span></a>
+               <ul class="menu-show">
+               </ul>
+           </li>
+    </nav>
+    <!-- SIDEBAR END -->
+    <!-- CONTENT AREA START-->
+    <div class="content">
+        <div class="card-header">BESARAN DALAM GERAK MELINGKAR</div>
+        <div class="content-card">
+            <h2>KECEPATAN SUDUT RATA RATA</h2>
+            <div class="baris">
+             <h4>KECEPATAN SUDUT RATA RATA</h4>
+             <p>Kecepatan yang dialami partikel dalam gerak melingkar disebut kecepatan sudut karena gerak partikel melalui sudut tertentu. Kecepatan sudut rata-rata adalah hasil bagi perpindahan sudut dengan selang waktu.</p>
+                 <center>
+                <table border="1" style="background-color:#f7ae4f;">
+                    <tr>
+                        <td>
+                            <p style="text-align: center; font-size:30px;"> $\bar{\omega} = \frac{\Delta\theta}{\Delta t} $ &nbsp;&nbsp;&nbsp;</p>
+                        </td>
+                    </tr>
+                </table>
+               </center>
+              <p>Keterangan:
+                <br>$\bar{\omega}$  = kecepatan rata-rata (rad/s) 
+                <br> Δθ = perpindahan sudut (rad)
+                <br> Δt = selang waktu (s)
+                </p>
+            </div>
+        </div>
+        <div class="card-heade" style="display: flex;">
+            <div id="contoh-soal" class="aktif">           
+                CONTOH SOAL
+            </div>
+            <div id="latihan">
+                LATIHAN 1
+            </div>
+            <div id="latihan2">
+                LATIHAN 2
+            </div>
+        </div>
+            <div class="content-card">
+                <div class="baris contoh-soal-content">
+                    <P style="text-indent: 0%;"> Sebuah benda berotasi dengan posisi sudut θ = t2 + 2t + 5, θ dalam rad dan t dalam sekon. Tentukan kecepatan rata-rata benda selama 5 detik pertama!<br> 
+                        Diketahui :
+                        <p style="text-indent: 0%;">θ = t$^2$ + 2t + 5 </p> 
+                        <p style="text-indent: 0%;">t$_1$ = 1s</p> 
+                        <p style="text-indent: 0%;">t$_5$ = 5s</p> 
+                        <p style="text-indent: 0%;">Ditanyakan :</p> 
+                        <p style="text-indent: 0%;"><var>$\omega$</var> \(=\) ... ?	 </p> 
+                        <p style="text-indent: 0%;">Jawab :</p> 
+                        <p style="text-indent: 0%;">Penyelesaian:</p> 
+                        <p style="text-indent: 0%;">Posisi sudut saat t = 1 yakni:</p> 
+                        <p style="text-indent: 0%;">θ$_1$ = t$^2$ + 2t + 5</p> 
+                        <p style="text-indent: 0%;">θ$_1$ = (1)$^2$+ 2(1) + 5</p>
+                        <p style="text-indent: 0%;">θ$_1$ = 8 rad</p>
+                        <br>
+                        <p style="text-indent: 0%;"> Posisi sudut saat t = 5 yakni: </p>
+                        <p style="text-indent: 0%;"> θ$_5$ = t$^2$  + 2t + 5 </p>
+                        <p style="text-indent: 0%;"> θ$_5$ = (5)$^2$  + 2(5) + 5 </p>
+                        <p style="text-indent: 0%;"> θ$_5$ = 25 + 10 + 5 </p>
+                        <p style="text-indent: 0%;"> θ$_5$ = 40 rad </p>
+                        <br>
+                        <p style="text-indent: 0%;">Kecepatan sudut rata-rata:</p>
+                        <p style="text-indent: 0%;">ω =<Var style="font-size: 25px;">$\frac{\theta_5 \ - \ \theta_1}{t_5 \ – \ t_1}$</Var></p>
+                        <p style="text-indent: 0%;">ω =<Var style="font-size: 25px;">$\frac{ 40 \ - 8}{5 \ – 1}$</Var></p>
+                        <p style="text-indent: 0%;">ω =<Var style="font-size: 25px;">$\frac{32}{4}$ </Var> </p>
+                        <p style="text-indent: 0%;">ω = 8 rad/s</p>
+                        </P>
+                </div>
+                <div class="baris latihan-content" style="display: none;">
+                    <P style="text-indent: 0%;">Posisi sebuah sudut ditentukan oleh persamaan: θ = (2t$^2$ + 5) rad. Tentukan: kecepatan sudut rata-rata dari t = 0 s hingga t = 3 s, ?
+                       <br> Diketahui:
+                       <br>
+                       <form id="form">
+                        <table style="margin-top: 5px;">
+                            <tr >
+                                <td style="font-size: 20px;color:black" rowspan="2"><var>θ </var> \( =\)</td>
+                                <td style="font-size: 20x;color:black" ><input style="margin-bottom:4px;" type="text" name="a0" size="2" class="jwbn" id="b0" onchange="cek0()">
+                                    <input style="margin-bottom:4px; width:30px;" type="text" name="a1" size="2" class="jwbn" id="b1" onchange="cek1()"><sup>
+                                    <input style="width: 25px; height:15px;" type="text" name="a2" size="1" class="jwbn" id="b2" onchange="cek2()"></sup> 
+                                  + <input style="margin-bottom:4px;" type="text" name="a3" size="2" class="jwbn" id="b3" onchange="cek3()"></td>
+                            </tr>
+                        </table>
+                        <p style="text-indent: 0%;"> t$_0$ \( =\) <input style="margin-bottom:4px;" type="text" name="a4" size="2" class="jwbn" id="b4" onchange="cek4()"> s </p>
+                        <p style="text-indent: 0%;"> t$_3$ \( =\) <input style="margin-bottom:4px;" type="text" name="a5" size="2" class="jwbn" id="b5" onchange="cek5()"> s </p>
+                        <p style="text-indent: 0%;">Ditanyakan :</p> 
+                        <p style="text-indent: 0%;"><var>$\omega$</var> \(=\) ... ?	 </p> 
+                        <p style="text-indent: 0%;">Jawab: </p>
+                        <p style="text-indent: 0%;"><b>Posisi sudut saat t = 0 s yakni:</b></p>
+                        <var>θ$_0$ </var> \(=\) <input style="margin-bottom:4px;" type="text" name="a6" size="2" class="jwbn" id="b6" onchange="cek6()">
+                                                <input style="margin-bottom:4px; width:30px;" type="text" name="a7" size="2" class="jwbn" id="b7" onchange="cek7()"><sup>
+                                                <input style="width: 25px; height:15px;" type="text" name="a8" size="1" class="jwbn" id="b8" onchange="cek8()"></sup> + 
+                                                <input style="margin-bottom:4px;" type="text" name="a9" size="2" class="jwbn" id="b9" onchange="cek9()"> rad <br><br>
+                        <var>θ$_0$ </var> \(=\) <input style="margin-bottom:4px;" type="text" name="a10" size="2" class="jwbn" id="b10" onchange="cek10()">
+                                                <input style="margin-bottom:4px; width:30px;" type="text" name="a11" size="2" class="jwbn" id="b11" onchange="cek11()"><sup>
+                                                <input style="width: 25px; height:15px;" type="text" name="a12" size="1" class="jwbn" id="b12" onchange="cek12()"></sup> + 
+                                                <input style="margin-bottom:4px;" type="text" name="a13" size="2" class="jwbn" id="b13" onchange="cek13()"> rad <br><br>
+                        <var>θ$_0$ </var> \(=\) <input type="text" name="a14" size="2" class="jwbn" id="b14" onchange="cek14()"> rad <br>
+                        <br>
+                        <p style="text-indent: 0%;"><b>Posisi sudut saat t = 3 s yakni:</b></p>
+                        <var>θ$_3$ </var> \(=\) <input style="margin-bottom:4px;" type="text" name="a15" size="2" class="jwbn" id="b15" onchange="cek15()">
+                                                <input style="margin-bottom:4px; width:30px;" type="text" name="a16" size="2" class="jwbn" id="b16" onchange="cek16()"><sup>
+                                                <input style="width: 25px; height:15px;" type="text" name="a17" size="1" class="jwbn" id="b17" onchange="cek17()"></sup> + 
+                                                <input style="margin-bottom:4px;" type="text" name="a18" size="2" class="jwbn" id="b18" onchange="cek18()"> rad <br><br>
+                        <var>θ$_3$ </var> \(=\) <input style="margin-bottom:4px;" type="text" name="a19" size="2" class="jwbn" id="b19" onchange="cek19()">
+                                                <input style="margin-bottom:4px; width:30px;" type="text" name="a20" size="2" class="jwbn" id="b20" onchange="cek20()"><sup>
+                                                <input style="width: 25px; height:15px;" type="text" name="a21" size="1" class="jwbn" id="b21" onchange="cek21()"></sup> + 
+                                                <input style="margin-bottom:4px;" type="text" name="a22" size="2" class="jwbn" id="b22" onchange="cek22()"> rad <br><br>
+                        <var>θ$_3$ </var> \(=\) <input type="text" name="a23" size="2" class="jwbn" id="b23" onchange="cek23()"> rad <br>
+                        <br>
+                        <p style="text-indent: 0%;"><b>Kecepatan rata-rata:</b></p>
+                        <p style="text-indent: 0%;">ω =<Var style="font-size: 25px;">$\frac{\theta_3 \ - \ \theta_0}{t_3 \ – \ t_0}$</Var></p>
+                        <table>
+                            <tr >
+                                <!-- atas -->
+                                <td style=" font-size: 18px;color:black" rowspan="2">$\omega$ \( =\)</td>
+                                <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                                    <input style="margin-bottom:4px;" type="text" name="a24" size="2" class="jwbn" id="b24" onchange="cek24()"> - <input style="margin-bottom:2px;" type="text" name="ak24" size="2" class="jwbn" id="bk24" onchange="cekk24()"></td>
+                            </tr>
+                            <tr>
+                                <!-- bawah -->
+                                <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="a25" size="2" class="jwbn" id="b25" onchange="cek25()"> - <input type="text" name="a26" size="2" class="jwbn" id="b26" onchange="cek26()"> 
+                            </tr>
+                        </table>
+                        <br>
+                        <table>
+                            <tr >
+                                <!-- atas -->
+                                <td style=" font-size: 18px;color:black" rowspan="2">$\omega$ \( =\)</td>
+                                <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                                    <input style="margin-bottom:4px;" type="text" name="a27" size="2" class="jwbn" id="b27" onchange="cek27()"> </td>
+                            </tr>
+                            <tr>
+                                <!-- bawah -->
+                                <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="a28" size="2" class="jwbn" id="b28" onchange="cek28()"> 
+                            </tr>
+                        </table>
+                        <br>
+                        <table>
+                            $\omega$ \( =\)<input type="text" name="a29" size="2" class="jwbn" id="b29" onchange="cek29()"> Rad/s
+                        </table>
+                             </p>
+                    </form>
+                </div>
+                <div class="baris latihan2-content" style="display: none;">
+                    <P style="text-indent: 0%;">Posisi sudut sebuah titik yang bergerak melingkar dinyatakan: θ = 2t$^3$ + 3t$^2$ + 2t + 2, θ dalam rad dan t dalam s. Tentukan kecepatan sudut rata-rata dari t = 0 hingga t = 4 s,
+                        <br> Diketahui:
+                        <br>
+                        <form id="form2">
+                         <table style="margin-top: 5px;">
+                             <tr >
+                                 <td style="font-size: 20px;color:black" rowspan="2"><var>θ </var> \( =\)</td>
+                                 <td style="font-size: 20x;color:black" ><input style="margin-bottom:4px;" type="text" name="a00" size="2" class="jwbn" id="b00" onchange="cek00()">
+                                     <input style="margin-bottom:4px; width:30px;" type="text" name="a01" size="2" class="jwbn" id="b01" onchange="cek01()"><sup>
+                                     <input style="width: 25px; height:15px;" type="text" name="a02" size="1" class="jwbn" id="b02" onchange="cek02()"></sup> +
+                                     <input style="margin-bottom:4px;" type="text" name="a03" size="2" class="jwbn" id="b03" onchange="cek03()">
+                                     <input style="margin-bottom:4px; width:30px;" type="text" name="a04" size="2" class="jwbn" id="b04" onchange="cek04()"><sup>
+                                     <input style="width: 25px; height:15px;" type="text" name="a05" size="1" class="jwbn" id="b05" onchange="cek05()"></sup> +
+                                     <input style="margin-bottom:4px;" type="text" name="a06" size="2" class="jwbn" id="b06" onchange="cek06()">
+                                     <input style="margin-bottom:4px; width:30px;" type="text" name="a006" size="2" class="jwbn" id="b006" onchange="cek006()"> + 
+                                     <input style="margin-bottom:4px;" type="text" name="a07" size="2" class="jwbn" id="b07" onchange="cek07()"></td>
+                             </tr>
+                         </table>
+                         <p style="text-indent: 0%;"> t$_0$ \( =\) <input style="margin-bottom:4px;" type="text" name="a08" size="2" class="jwbn" id="b08" onchange="cek08()"> s </p>
+                         <p style="text-indent: 0%;"> t$_4$ \( =\) <input style="margin-bottom:4px;" type="text" name="a09" size="2" class="jwbn" id="b09" onchange="cek09()"> s </p>
+                         <p style="text-indent: 0%;">Ditanyakan :</p> 
+                         <p style="text-indent: 0%;"><var>$\omega$</var> \(=\) ... ?	 </p> 
+                         <p style="text-indent: 0%;">Jawab: </p>
+                         <p style="text-indent: 0%;"><b>Posisi sudut saat t = 0 s yakni:</b></p>
+                         <var>θ$_0$ </var> \(=\) <input style="margin-bottom:4px;" type="text" name="a010" size="2" class="jwbn" id="b010" onchange="cek010()">
+                                                 <input style="margin-bottom:4px; width:30px;" type="text" name="a011" size="2" class="jwbn" id="b011" onchange="cek011()"><sup>
+                                                 <input style="width: 25px; height:15px;" type="text" name="a012" size="1" class="jwbn" id="b012" onchange="cek012()"></sup> + 
+                                                 <input style="margin-bottom:4px;" type="text" name="a013" size="2" class="jwbn" id="b013" onchange="cek013()">
+                                                 <input style="margin-bottom:4px; width:30px;" type="text" name="a014" size="2" class="jwbn" id="b014" onchange="cek014()"><sup>
+                                                 <input style="width: 25px; height:15px;" type="text" name="a015" size="1" class="jwbn" id="b015" onchange="cek015()"></sup> +
+                                                 <input style="margin-bottom:4px;" type="text" name="a016" size="2" class="jwbn" id="b016" onchange="cek016()"> 
+                                                 <input style="margin-bottom:4px;width:30px" type="text" name="a0016" size="2" class="jwbn" id="b0016" onchange="cek0016()">+ 
+                                                 <input style="margin-bottom:4px;" type="text" name="a017" size="2" class="jwbn" id="b017" onchange="cek017()"> rad <br><br>
+                         <var>θ$_0$ </var> \(=\) <input style="margin-bottom:4px;" type="text" name="a018" size="2" class="jwbn" id="b018" onchange="cek018()">
+                                                 <input style="margin-bottom:4px; width:30px;" type="text" name="a019" size="2" class="jwbn" id="b019" onchange="cek019()"><sup>
+                                                 <input style="width: 25px; height:15px;" type="text" name="a020" size="1" class="jwbn" id="b020" onchange="cek020()"></sup> + 
+                                                 <input style="margin-bottom:4px;" type="text" name="a021" size="2" class="jwbn" id="b021" onchange="cek021()">
+                                                 <input style="margin-bottom:4px; width:30px;" type="text" name="a022" size="2" class="jwbn" id="b022" onchange="cek022()"><sup>
+                                                 <input style="width: 25px; height:15px;" type="text" name="a023" size="1" class="jwbn" id="b023" onchange="cek023()"></sup> +
+                                                 <input style="margin-bottom:4px;" type="text" name="a024" size="2" class="jwbn" id="b024" onchange="cek024()"> 
+                                                 <input style="margin-bottom:4px; width:30px;" type="text" name="a0024" size="2" class="jwbn" id="b0024" onchange="cek0024()">+ 
+                                                 <input style="margin-bottom:4px;" type="text" name="a025" size="2" class="jwbn" id="b025" onchange="cek025()"> rad <br><br>
+                         <var>θ$_0$ </var> \(=\) <input type="text" name="a026" size="2" class="jwbn" id="b026" onchange="cek026()"> rad <br>
+                         <br>
+                         <p style="text-indent: 0%;"><b>Posisi sudut saat t = 4 s yakni:</b></p>
+                         <var>θ$_4$ </var> \(=\) <input style="margin-bottom:4px;" type="text" name="a027" size="2" class="jwbn" id="b027" onchange="cek027()">
+                                                 <input style="margin-bottom:4px; width:30px;" type="text" name="a028" size="2" class="jwbn" id="b028" onchange="cek028()"><sup>
+                                                 <input style="width: 25px; height:15px;" type="text" name="a029" size="1" class="jwbn" id="b029" onchange="cek029()"></sup> + 
+                                                 <input style="margin-bottom:4px;" type="text" name="a030" size="2" class="jwbn" id="b030" onchange="cek030()">
+                                                 <input style="margin-bottom:4px; width:30px;" type="text" name="a031" size="2" class="jwbn" id="b031" onchange="cek031()"><sup>
+                                                 <input style="width: 25px; height:15px;" type="text" name="a032" size="1" class="jwbn" id="b032" onchange="cek032()"></sup> +
+                                                 <input style="margin-bottom:4px;" type="text" name="a033" size="2" class="jwbn" id="b033" onchange="cek033()">
+                                                 <input style="margin-bottom:4px; width:30px;" type="text" name="a0033" size="2" class="jwbn" id="b0033" onchange="cek0033()"> + 
+                                                 <input style="margin-bottom:4px;" type="text" name="a034" size="2" class="jwbn" id="b034" onchange="cek034()"> rad <br><br>
+                         <var>θ$_4$ </var> \(=\) <input style="margin-bottom:4px;" type="text" name="a035" size="2" class="jwbn" id="b035" onchange="cek035()">
+                                                 <input style="margin-bottom:4px; width:30px;" type="text" name="a036" size="2" class="jwbn" id="b036" onchange="cek036()"><sup>
+                                                 <input style="width: 25px; height:15px;" type="text" name="a037" size="1" class="jwbn" id="b037" onchange="cek037()"></sup> +
+                                                 <input style="margin-bottom:4px;" type="text" name="a038" size="2" class="jwbn" id="b038" onchange="cek038()">
+                                                 <input style="margin-bottom:4px; width:30px;" type="text" name="a039" size="2" class="jwbn" id="b039" onchange="cek039()"><sup>
+                                                 <input style="width: 25px; height:15px;" type="text" name="a040" size="1" class="jwbn" id="b040" onchange="cek040()"></sup> +
+                                                 <input style="margin-bottom:4px;" type="text" name="a041" size="2" class="jwbn" id="b041" onchange="cek041()"> 
+                                                 <input style="margin-bottom:4px; width:30px;" type="text" name="a0041" size="2" class="jwbn" id="b0041" onchange="cek0041()">+ 
+                                                 <input style="margin-bottom:4px;" type="text" name="a042" size="2" class="jwbn" id="b042" onchange="cek042()"> rad <br><br>
+                         <var>θ$_4$ </var> \(=\) <input type="text" name="a043" size="2" class="jwbn" id="b043" onchange="cek043()"> rad <br>
+                         <br>
+                         <p style="text-indent: 0%;"><b>Kecepatan rata-rata:</b></p>
+                         <p style="text-indent: 0%;">ω =<Var style="font-size: 25px;">$\frac{\theta_4 \ - \ \theta_0}{t_4 \ – \ t_0}$</Var></p>
+                         <table>
+                             <tr >
+                                 <!-- atas -->
+                                 <td style=" font-size: 18px;color:black" rowspan="2">$\omega$ \( =\)</td>
+                                 <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                                     <input style="margin-bottom:4px;" type="text" name="a044" size="2" class="jwbn" id="b044" onchange="cek044()"> - <input style="margin-bottom:2px;" type="text" name="a045" size="2" class="jwbn" id="b045" onchange="cek045()"></td>
+                             </tr>
+                             <tr>
+                                 <!-- bawah -->
+                                 <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="a046" size="2" class="jwbn" id="b046" onchange="cek046()"> - <input type="text" name="a047" size="2" class="jwbn" id="b047" onchange="cek047()"> 
+                             </tr>
+                         </table>
+                         <br>
+                         <table>
+                            <tr >
+                                <!-- atas -->
+                                <td style=" font-size: 18px;color:black" rowspan="2">$\omega$ \( =\)</td>
+                                <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                                <input type="text" name="a048" size="2" class="jwbn" id="b048" onchange="cek048()"> </td>
+                            </tr>
+                            <tr>
+                                <!-- bawah -->
+                                <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="a049" size="2" class="jwbn" id="b049" onchange="cek049()"> 
+                            </tr>
+                        </table>
+                        <br>
+                        <table>
+                            $\omega$ \( =\)<input type="text" name="a050" size="2" class="jwbn" id="b050" onchange="cek050()"> Rad/s
+                        </table>
+                              </p>
+                     </form>
+                     <center>
+                        <br>
+                        <button id="btn-print-this" class="btnunduh">Download</button>
+        
+                        <button id="upbtn" class="btnupload">Upload</button>
+        
+                        <button id="selbtn" class="btnpilih">Pilih File</button>
+                      
+                        <input type="text" style="box-shadow : 2px 2px 6px rgba(0, 0, 0, 0.4);border: none; height: 40px; width: fit-content;" id="namebox"> <label id="extlab"></label>
+                        <span id="myimg"><label id="upprogress"></label></span>
+                       <br>
+                        <br>
+                    </center>
+                </div>
+            </div>
+        <div class="footer-nav">
+            <a href="gerak melingkar beraturan.html" class="footer-number">Selanjutnya</a>
+        </div>
+    </div>
+    <!-- CONTENT AREA END -->
+    
+    <!-- JAVASCRIPT AREA START-->
+    <script type="text/javascript">
+    //dropdown menu
+    $(document).ready(function () {
+        $(".menu-btn").click(function () {
+            if ($(this).siblings(".menu-show").css("display") == "block") {
+                $(this).siblings(".menu-show").css("display", "none");
+            } else {
+                $('.menu-show').css("display", "none");
+                $(this).siblings(".menu-show").css("display", "block");
+            }
+        });
+
+        $("li ul li").click(function () {
+            $("li ul li").removeClass("active");
+            $(this).addClass("active");
+        });
+    
+        $('.nav_btn').click(function () {
+            $('.mobile_nav_items').toggleClass('active');
+        });
+    });
+    </script>
+
+     <!-- java script menu latihan	 -->
+     <script>
+        const divContohSoal =  document.getElementById("contoh-soal");
+        const divLatihan =  document.getElementById("latihan");
+        const divLatihan2 = document.getElementById("latihan2")
+
+        divContohSoal.addEventListener("click", function() {
+            document.querySelector(".contoh-soal-content").style.display = "block";
+            document.querySelector(".latihan-content").style.display = "none";
+            document.querySelector(".latihan2-content").style.display ="none";
+            
+            document.querySelector(".contoh-soal-content").classList.add("animate__fadeIn");
+            document.querySelector(".latihan-content").classList.remove("animate__fadeIn"); 
+        });
+        
+        divLatihan.addEventListener("click", function() {
+            document.querySelector(".contoh-soal-content").style.display = "none";
+            document.querySelector(".latihan-content").style.display = "block";
+            document.querySelector(".latihan2-content").style.display ="none";
+
+        });
+
+        divLatihan2.addEventListener("click", function() {
+            document.querySelector(".contoh-soal-content").style.display = "none";
+            document.querySelector(".latihan-content").style.display = "none";
+            document.querySelector(".latihan2-content").style.display ="block";
+        });
+    </script>
+
+    <!-- javascript reset form latihan -->
+    <script>document.getElementById("form").reset()</script> 
+    <script>document.getElementById("form2").reset()</script> 
+
+     <!-- javascript print -->
+     <script>
+        $(document).ready(function(){
+        $('#btn-print-this').click(function(){
+            $('.latihan2-content').printThis();
+        });
+      });
+     </script>
+ 
+     <!-- firebase -->
+     <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBPsyT3idkbKgIs6Tv9VYUGBYJEwGmVwKk",
+            authDomain: "gerakmelingkar-af778.firebaseapp.com",
+            databaseURL: "https://gerakmelingkar-af778-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "gerakmelingkar-af778",
+            storageBucket: "gerakmelingkar-af778.appspot.com",
+            messagingSenderId: "642003937999",
+            appId: "1:642003937999:web:50fc9c9e8e1fe5dbb465ba"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        import { getStorage, ref as sRef, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-storage.js";
+
+        //Firebase Realtime Database
+        import { getDatabase, ref, child, get, set } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+        const db = getDatabase();
+
+        //FUNGSI WAKTU DAN HARI
+            var d = new Date();
+            var t = d.getTime();
+            var counter = t;
+
+            // ambil jamnya
+            window.setTimeout("waktu()", 1000);
+
+            function waktu() {
+                var tanggal = new Date();
+                setTimeout("waktu()", 1000);
+                return (tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal.getSeconds());
+            }
+
+            // harinya
+            function hari() {
+                let tanggallengkap = new String();
+                let namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+                namahari = namahari.split(" ");
+                let namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+                namabulan = namabulan.split(" ");
+                let tgl = new Date();
+                let hari = tgl.getDay();
+                let tanggal = tgl.getDate();
+                let bulan = tgl.getMonth();
+                let tahun = tgl.getFullYear();
+                tanggallengkap = namahari[hari] + ", " + tanggal + " " + namabulan[bulan] + " " + tahun;
+                return (tanggallengkap);
+            }
+
+            let waktunya = waktu();
+            let harinya = hari();
+
+                //Variables & Reference
+
+                var files = [];
+                var reader = new FileReader();
+
+                var namebox = document.getElementById('namebox');
+                var extlab = document.getElementById('extlab');
+                var myimg = document.getElementById('myimg');
+                var proglab = document.getElementById('upprogress');
+                var SelBtn = document.getElementById('selbtn');
+                var UpBtn = document.getElementById('upbtn');
+                var DownBtn = document.getElementById('downbtn');
+
+                var input = document.createElement('input');
+                input.type = 'file';
+
+                input.onchange = e =>{
+                    files = e.target.files;
+
+                    var extention = GetFileExt(files[0]);
+                    var name = GetFileName(files[0]);
+
+                    namebox.value= name;
+                    extlab.innerHTML = extention;
+
+                    reader.readAsDataURL(files[0]);
+                }
+                reader.onload = function(){
+                    myimg.src = reader.result;
+                }
+
+                //Selection
+                SelBtn.onclick = function(){
+                  input.click();
+                }
+
+                function GetFileExt(file){
+                    var temp = file.name.split('.');
+                    var ext = temp.slice((temp.length-1),(temp.length));
+                    return '.' + ext[0];
+                }
+
+                function GetFileName(file){
+                    var temp = file.name.split('.');
+                    var fname = temp.slice(0,-1).join('.');
+                    return fname;
+                }
+                function validasi(){
+    
+  
+                if (namebox.value == "")
+                
+                {
+                  alert("silahkan pilih file");
+                  return false;
+                }
+
+                return true;
+              }
+
+            async function UploadProcess(){
+                  if (!validasi()){
+                  return;
+              };
+
+                  //FUNGSI WAKTU DAN HARI
+            var d = new Date();
+            var t = d.getTime();
+            var counter = t;
+
+            // ambil jamnya
+            window.setTimeout("waktu()", 1000);
+
+            function waktu() {
+                var tanggal = new Date();
+                setTimeout("waktu()", 1000);
+                return (tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal.getSeconds());
+            }
+
+            // harinya
+            function hari() {
+                let tanggallengkap = new String();
+                let namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+                namahari = namahari.split(" ");
+                let namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+                namabulan = namabulan.split(" ");
+                let tgl = new Date();
+                let hari = tgl.getDay();
+                let tanggal = tgl.getDate();
+                let bulan = tgl.getMonth();
+                let tahun = tgl.getFullYear();
+                tanggallengkap = namahari[hari] + ", " + tanggal + " " + namabulan[bulan] + " " + tahun;
+                return (tanggallengkap);
+            }
+
+            let waktunya = waktu();
+            let harinya = hari();
+            
+            // upload file
+
+            var ImgToUpload = files[0];
+            var name = namebox.value;
+
+            const metaData ={
+                contentType: ImgToUpload.type
+            }
+
+            const storage = getStorage();
+
+            const storageRef = sRef(storage, "Tugas_3/"+name);
+
+            const UploadTask = uploadBytesResumable(storageRef, ImgToUpload, metaData);
+
+            UploadTask.on('state-changed', (snapshot)=>{
+                var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                proglab.innerHTML = "Upload"+ progress + "%";
+            },
+
+          
+            (error) =>{
+                alert("error : File not uploaded");
+            },
+
+            ()=>{
+                getDownloadURL(UploadTask.snapshot.ref).then((downloadURL)=>{
+                  const fullnama =  sessionStorage.getItem('nama');
+                  const niss     =  sessionStorage.getItem('nis');
+                  const kelass   =  sessionStorage.getItem('kelas');
+                  const sekolahh =  sessionStorage.getItem('sekolah');
+                    set(ref(db,"Tugas_3/"+name),{
+                      
+                        namasiswa:fullnama,
+                        nis:niss,
+                        kelas:kelass,
+                        sekolah:sekolahh,
+                        nama:name,
+                        link:downloadURL,
+                        waktu: waktunya,
+                        hari:harinya,
+                    });
+
+                    // $('#exampleModal').modal('hide');
+                    alert("sukses");
+
+                });
+            }
+            );
+        
+      }
+
+      UpBtn.onclick = UploadProcess;
+
+        const fullnama =  sessionStorage.getItem('nama');
+        const niss     =  sessionStorage.getItem('nis');
+        const kelass   =  sessionStorage.getItem('kelas');
+        const sekolahh =  sessionStorage.getItem('sekolah');
+
+        const Btn = document.getElementById('Btn');
+        const Btn2 = document.getElementById('Btn2');
+
+        function submit(){
+                    set(ref(db,"TekananHidro/"+niss),{
+                        
+                namasiswa:fullnama,
+                nis:niss,
+                kelas:kelass,
+                sekolah:sekolahh,
+                skor:Math.floor(skor1),
+                waktu: waktunya,
+                hari:harinya,
+            });
+        }
+
+        
+//Assign the events
+Btn.addEventListener('click', submit);
+
+function kirim(){
+              set(ref(db,"TekananHidro2/"+niss),{
+                
+                namasiswa:fullnama,
+                nis:niss,
+                kelas:kelass,
+                sekolah:sekolahh,
+                skor:Math.floor(skor2),
+                waktu: waktunya,
+                hari:harinya,
+            });
+        }
+
+        
+//Assign the events
+Btn2.addEventListener('click', kirim);
+
+      //MENAMBAHKAN NAMA USER
+     
+      </script>
+
+    <!-- JAVASCRIPT AREA END -->		
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kompetensi</title>
+    <link rel="stylesheet" href="assets/css/style_kikd.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- ADDITIONAL JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="UTF-8"></script>
+    <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-chtml.min.js"></script>
+
+    <!-- Bosstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"  integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+        <h1>GERAK MELINGKAR</h1>
+            <a href="index.html" class="logout_btn">
+                <i class="fas fa-home" aria-hidden="true"></i>
+            </a> 
+    <script src="assets/js/jskikd.js"></script>
+<div class="kontainer">
+	<div class="nav">
+		<div class="pilih">
+			<button class="pilihan tmblAktif" onclick="bukaIsi(event, 'isi1')">Kompetensi Inti</button><br><br>
+        	<button class="pilihan" onclick="bukaIsi(event, 'isi2')">Kompetensi Dasar</button><br><br>
+            <button class="pilihan" onclick="bukaIsi(event, 'isi3')">Peta Konsep</button>
+		</div>
+	</div>
+	<div class="isi">
+		<!-- KI-->
+		<div class="isian isiAktif" id="isi1">
+			<center><h2>Kompetensi Inti</h2></center><br>
+			<ol>
+                <li>Menghargai dan menghayati ajaran agama yang dianutnya.</li>
+                <li>Menghayati dan mengamalkan perilaku jujur, disiplin, tanggung-jawab, peduli (gotong royong, kerjasama, toleran, damai), santun, responsif dan proaktif dan menunjukkan sikap sebagai bagian dari solusi atas berbagai permasalahan dalam berinteraksi secara efektif dengan lingkungan sosial dan alam serta dalam menempatkan diri sebagai cerminan bangsa dalam pergaulan dunia.</li>
+                <li>Memahami, menerapkan dan menganalisis pengetahuan faktual, konseptual, prosedural, dan metakognitif berdasarkan rasa ingin tahunya tentang ilmu pengetahuan, teknologi, seni, budaya, dan humaniora dengan wawasan kemanusiaan, kebangsaan, kenega-raan, dan peradaban terkait penyebab fenomena dan kejadian dalam bidang kerja yang spesifik untuk memecahkan masalah.</li>
+                <li>Mengolah, menalar, dan menyaji dalam ranah konkret dan ranah abstrak terkait dengan pengembangan dari yang dipelajarinya di sekolah secara mandiri, bertindak secara efektif dan kreatif, dan mampu melaksanakan tugas spesifik di bawah pengawasan langsung.</li>
+            </ol>
+		</div>
+		<!--KD-->
+		<div class="isian" id="isi2">
+			<div class="kd">
+			<center><h2>Kompetensi Dasar</h2></center><br>
+			3.2 Menganalisis besaran fisis pada gerak melingkar dengan laju konstan (tetap) dan penerapannya dalam kehidupan sehari-hari.<br>
+			3.3 Melakukan percobaan berikut presentasi hasilnya tentang gerak melingkar, makna fisis dan pemanfaatannya.<br>
+			</div>
+		</div>
+        <div class="isian" id="isi3">
+			<div class="kd">
+			<center><h2>Peta Konsep</h2></center><br>
+            <center><img src="image/gambar/peta konsep.png" style="width:700px;height:500px; margin-left:70px; margin-top:-40px;"></center>
+			</div>
+		</div>
+		<!--Petkon-->
+	</div>
+</div>
+
+<script data-pagespeed-no-defer>(function(){function f(b){var a=window;if(a.addEventListener)a.addEventListener("load",b,!1);else if(a.attachEvent)a.attachEvent("onload",b);else{var c=a.onload;a.onload=function(){b.call(this);c&&c.call(this)}}};window.pagespeed=window.pagespeed||{};var k=window.pagespeed;function l(b,a,c,g,h){this.h=b;this.i=a;this.l=c;this.j=g;this.b=h;this.c=[];this.a=0}l.prototype.f=function(b){for(var a=0;250>a&&this.a<this.b.length;++a,++this.a)try{document.querySelector(this.b[this.a])&&this.c.push(this.b[this.a])}catch(c){}this.a<this.b.length?window.setTimeout(this.f.bind(this),0,b):b()};
+k.g=function(b,a,c,g,h){if(document.querySelector&&Function.prototype.bind){var d=new l(b,a,c,g,h);f(function(){window.setTimeout(function(){d.f(function(){for(var a="oh="+d.l+"&n="+d.j,a=a+"&cs=",b=0;b<d.c.length;++b){var c=0<b?",":"",c=c+encodeURIComponent(d.c[b]);if(131072<a.length+c.length)break;a+=c}k.criticalCssBeaconData=a;var b=d.h,c=d.i,e;if(window.XMLHttpRequest)e=new XMLHttpRequest;else if(window.ActiveXObject)try{e=new ActiveXObject("Msxml2.XMLHTTP")}catch(m){try{e=new ActiveXObject("Microsoft.XMLHTTP")}catch(n){}}e&&
+(e.open("POST",b+(-1==b.indexOf("?")?"?":"&")+"url="+encodeURIComponent(c)),e.setRequestHeader("Content-Type","application/x-www-form-urlencoded"),e.send(a))})},0)})}};k.criticalCssBeaconInit=k.g;})();
+pagespeed.selectors=["*",".close",".himpimg",".home",".isi",".isiAktif",".isian",".isian li",".kd",".modal",".modal-content",".nav",".petkon",".pilih",".pilih .tmblAktif",".pilih button",".pilihan","body","header"];pagespeed.criticalCssBeaconInit('/ngx_pagespeed_beacon','http://www.ta.pilkommedia.org/1610131220014/kikd/kikd.html','c_DGtnzDvR','jAOQxrq2P5o',pagespeed.selectors);</script></body>
+
+</body>
+
+</html>

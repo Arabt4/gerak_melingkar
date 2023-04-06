@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUBUNGAN RODA RODA</title>
+    <link rel="icon" type="image/png" href="image/debian.png">
+    <link rel="stylesheet" href="assets/css/style_materi.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- ADDITIONAL JQUERY -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" charset="UTF-8"></script>
+    <script id="MathJax-script" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.0/es5/tex-chtml.min.js"></script>
+    <script>
+        MathJax = {
+          tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']]
+          }
+        };
+        </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <script src="assets/js/printThis.js"></script>
+    <script src="assets/js/latihan_roda_sepusat.js"></script>
+</head>
+<body>
+    <!-- HEADER AREA START-->
+    <input type="checkbox" id="check">
+    <header>
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        <div class="judul_area">
+            <h3>GERAK MELINGKAR</h3>
+        </div>
+        <div class="right_area">
+            <a href="index.html" class="logout_btn">
+                <i class="fas fa-home"></i>
+            </a>
+        </div>
+           </header>
+    <!-- HEADER AREA END -->
+
+    <!-- SIDEBAR START -->
+    <nav class="sidebar">
+        <div class="profile_info">
+            <h3>MATERI</h3>
+            <hr style="width: 90%; color: #fc7f03; ; margin: 5px 0 5px 0;">
+        </div>
+        <ul>
+            <li><a href="penghantar.html" class="menu-btn"><span class="numbering_text1"> PENGHANTAR</span></a>
+            <li><a href="besaran_gerak_melingkar.html" class="menu-btn"><span class="numbering_text1">BESARAN GERAK MELINGKAR<i class="fas fa-caret-down"></i></span></a>
+                <ul class="menu-show">
+                    <li><a href="besaran_gerak_melingkar.html"><span class="numbering1">1.1</span><span class="numbering_text">PERIODE DAN FREKUENSI</span></a></li>
+                    <li><a href="perpindahan sudut.html"><span class="numbering1">1.2</span><span class="numbering_text">PERPINDAHAN SUDUT</span></a></li>
+                    <li><a href="kecepatan sudut rata rata.html"><span class="numbering1">1.3</span><span class="numbering_text">KECEPATAN SUDUT RATA RATA</span></a></li>
+                    <li><a href="#"><span class="numbering1"></span><span class="numbering_text">KUIS 1</span></a></li>
+                </ul>
+            </li>
+            <li><a href="gerak melingkar beraturan.html"class="menu-btn"><span class="numbering_text1">GERAK MELINGKAR BERATURAN<i class="fas fa-caret-down"></i></span></a>
+                <ul class="menu-show" >
+                    <li><a href="gerak melingkar beraturan.html" ><span class="numbering1">2.1</span><span class="numbering_text">PERPINDAHAN LINEAR DAN PERPINDAHAN SUDUT</span></a></li>
+                    <li><a href="kecepatan linear kecepatan sudut.html"><span class="numbering1">2.2</span><span class="numbering_text">KECEPATAN LINEAR DAN KECEPATAN SUDUT</span></a></li>
+                    <li><a href="percepatan sentripetal.html"><span class="numbering1">2.3</span><span class="numbering_text">PERCEPATAN SENTRIPETAL</span></a></li>
+                    <li><a href="#"><span class="numbering1"></span><span class="numbering_text">KUIS 2</span></a></li>
+                </ul>
+            </li>
+            <li><a href="hubungan roda.html" class="menu-btn-active"><span class="numbering_text1">HUBUNGAN RODA RODA<i class="fas fa-caret-down"></i></span></a>
+                <ul class="menu-show" style="display:block;">
+                    <li><a href="#"class="menu-btn-active-number"><span class="numbering1">3.1</span><span class="numbering_text">HUBUNGAN RODA RODA SEPUSAT</span></a></li>
+                    <li><a href="hubungan roda bersinggungan.html"><span class="numbering1">3.2</span><span class="numbering_text">HUBUNGAN RODA RODA YANG BERSINGGUNGAN</span></a></li>
+                    <li><a href="hubungan roda rantai.html"><span class="numbering1">3.3</span><span class="numbering_text">HUBUNGAN RODA RODA YANG YANG DIHUBUNGKAN DENGAN RANTAI</span></a></li>
+                    <li><a href="#"><span class="numbering1"></span><span class="numbering_text">KUIS 3</span></a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="menu-btn"><span class="numbering_text1">EVALUASI</span></a>
+               <ul class="menu-show">
+               </ul>
+           </li>
+    </nav>
+    <!-- SIDEBAR END -->
+    <!-- CONTENT AREA START-->
+    <div class="content">
+        <div class="card-header">PENERAPAN GERAK MELINGKAR </div>
+        <div class="content-card">
+            <h2>HUBUNGAN RODA RODA</h2>
+            <div class="baris">
+             <p>Pada Subbab ini akan dibahas beberapa hal yang terkait dengan gerak melingkar pada roda atau benda berbentuk melingkar. Banyak sekali penerapan gerak melingkar dalam kehidupan sehari-hari. Penerapan gerak melingkar ini dapat dilihat pada hubungan roda-roda. Hubungan roda-roda dapat anda amati pada gir sepeda, mesin jam dinding, mesih jahit dan banyak lagi yang lainnya. Sekarag simakalkah materi berikut untuk mengenal lebih jauh konsep hubungan roda-roda.</p>
+             <p>Simaklah video dibawah ini agar anda dapat mengerti mengenai konsep hubungan roda roda !!</p>
+                <center>
+                    <video width="640" src="image/video/gerak melingkar.mp4" controls> </video>
+                </center>
+            </p>
+            <br>
+            <h3>Hubungan Roda Roda Sepusat</h3>
+            <p>Hubungan roda-roda sepusat yang dimaksud adalah dua roda atau lebih yang berporos sama dan saling menyatu.</p>
+            <center>
+                <table >
+                    <tr>
+                    <td><img src="image/gambar/roda sepusat.png" alt="roda sepusat" style="width:250px; height: 250px;"></td>
+                    </tr>
+                </table>
+            </center>
+            <p>Gambar di atas adalah contoh ilustrasi hubungan roda-roda satu poros atau satu pusat seperti hubungan roda pada gir belakang dengan roda belakang sepeda ontel. Jadi anggap saja dua lingkaran di atas adalah gir dan roda sepeda. Pada saat sepeda bergerak maju, roda belakang berputar searah jarum jam. Demikian pula dengan gir belakang. Setelah selang waktu tertentu, gir belakang dan roda menempuh posisi sudut yang sama. Ini berarti, kecepatan sudut gir belakang dan roda belakang adalah sama. Jadi, pada roda-roda yang sepusat berlaku rumus atau persamaan sebagai berikut:</p>
+            <center>
+                <table border="1" style="background-color:#f7ae4f;">
+                    <tr>
+                        <td>
+                            <p style="text-align: center; font-size:25px;"> $ω_{A} = ω_{B}$ &nbsp;&nbsp;&nbsp;</p>
+                            <p style="text-align: center; font-size:25px;"> $\frac{v_A}{R_A} = \frac{v_B}{R_B}$ &nbsp;&nbsp;&nbsp;</p>
+                            <p style="text-align: center; font-size:25px;" > $\frac{v_A}{v_B} = \frac{R_A}{R_B}$ &nbsp;&nbsp;&nbsp;</p>
+                        </td>
+                    </tr>
+                </table>
+               </center>  
+               <p>Keterangan:              
+                <br>$ \omega $ = kecepatan sudut (rad/s) 
+                <br>$v$ = kecepatan linear (m/s) 
+                <br>$R$ = jari-jari (m)
+                 </p>  
+        </div>
+     </div>
+     <div class="card-head" style="display: flex;">
+        <div id="contoh-soal">CONTOH SOAL</div>
+        <div id="latihan"> LATIHAN </div>
+        <div id="latihan2"> LATIHAN 2</div>
+    </div>
+        <div class="content-card">
+         <div class="baris contoh-soal-content">
+             <P style=" font-size:18px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; text-indent: 0% ;" >Dua buah roda A dan B yang berada pada satu poros memiliki jari-jari 2 cm dan 8 cm, seperti yang terlihat pada gambar dibawah ini. Jika kecepatan linear roda A adalah 6 m/s, 
+              <br><td><img src="image/gambar/sepusat 1.png" alt="roda sepusat" style="width:180px; height: 180px;"></td>
+              <br> tentukan: 	a) kecepatan sudut roda A 
+              <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) kecepatan linear dan kecepatan sudut roda B
+              <br> 
+              <br> Diketahui : 	a. R$_{A}$ = 2 cm = 0,02 m
+              <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b. R$_{B}$ = 8 cm = 0,08 m
+              <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c. v$_{A}$ = 6 m/s
+              <br>
+              <br> Ditanyakan : a. ω$_{A}$ = …?
+              <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b. ω$_{B}$ = …? 
+              <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c. v$_{B}$ = …? 
+              <br> Jawab  :
+              <br> a. $ω_{A}$= $\frac{\mathrm{vA}}{RA}$
+              <br> &nbsp;&nbsp;&nbsp; $ω_{A}$ = $\frac{\mathrm{6}}{0,02}$
+              <br> &nbsp;&nbsp;&nbsp; $ω_{A}$ = 300 rad/s 
+              <br>
+              <br> b. $ω_{A}$ = $ω_{B}$
+              <br> &nbsp;&nbsp;&nbsp; $ω_{B}$ = 300 rad/s
+              <br>
+              <br> c. $v_{B}$ = $ω_{B}$ $\times$ R (rumus hubungan besaran sudut dengan linear) 
+              <br> &nbsp;&nbsp;&nbsp; $v_{B}$ = 300 $\times$ 0,08 
+              <br> &nbsp;&nbsp;&nbsp; $v_{B}$ = 24 m/s
+              
+               </P>
+         </div>
+         <div class="baris latihan-content" style="display: none;">
+            <P style="text-indent: 0%;font-size:18px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif" >Dua buah roda A dan B yang berada pada satu poros memiliki jari-jari 5 cm dan 10 cm, seperti yang terlihat pada gambar dibawah ini. Jika kecepatan linear roda A adalah 20 m/s, 
+                <br><td><img src="image/gambar/sepusat 2.png" alt="roda sepusat" style="width:200px; height: 200px;"></td>
+                    tentukan: 
+                <br>a) kecepatan sudut roda A 
+                <br>b) kecepatan linear dan kecepatan sudut roda B 
+                <br> Diketahui : 	 
+                <form id="form" style="font-size:18px; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif">
+                  <var>R$_{A}$ </var> &nbsp; &nbsp;\(=\) <input type="text" name="a1" size="2" class="jwbn" id="b1" onchange="cek1()"> cm &nbsp; \(=\)<input type="text" name="a2" size="2" class="jwbn" id="b2" onchange="cek2()"> m <br><br>
+                  <var>R$_{B}$</var>&nbsp; &nbsp;\(=\) <input type="text" name="a3" size="2" class="jwbn" id="b3" onchange="cek3()"> cm \(=\)<input type="text" name="a4" size="2" class="jwbn" id="b4" onchange="cek4()"> m<br><br>
+                   <var>v$_A$ </var> &nbsp; &nbsp;\(=\) <input type="text" name="a5" size="5" class="jwbn" id="b5" onchange="cek5()"> m/s <br><br>
+                 <br>Ditanyakan : 
+                  <br>
+                  <br>a. ω$_{A}$ = …?
+                  <br>
+                  <br>b. ω$_{B}$ = …? 
+                  <br>
+                  <br>c. v$_{B}$ = …? 
+                  <br>
+                  <br>Jawab: 
+                  <br>
+                  <table style="margin-top: 5px;">
+                    <tr >
+                        <!-- atas -->
+                        <td style=" font-size: 18px;color:black" rowspan="2">a. ω$_{A}$\( =\)</td>
+                        <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                            <input style="margin-bottom:4px;" type="text" name="a6" size="2" class="jwbn" id="b6" onchange="cek6()"></td>
+                    </tr>
+                    <tr>
+                        <!-- bawah -->
+                        <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="a7" size="2" class="jwbn" id="b7" onchange="cek7()"> 
+                    </tr>
+                </table>
+                <table style="margin-top: 5px;">
+                    <tr >
+                        <!-- atas -->
+                        <td style=" font-size: 18px;color:black" rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp;ω$_{A}$\( =\)</td>
+                        <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                            <input style="margin-bottom:4px;" type="text" name="a8" size="2" class="jwbn" id="b8" onchange="cek8()"></td>
+                    </tr>
+                    <tr>
+                        <!-- bawah -->
+                        <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="a9" size="2" class="jwbn" id="b9" onchange="cek9()"> 
+                    </tr>
+                </table>
+                <table style="margin-top: 5px;">
+                    <tr >
+                        <!-- atas -->
+                        <td style=" font-size: 19px;color:black" rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp;ω$_{A}$\( =\)</td>
+                    <tr>
+                        <!-- bawah -->
+                        <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="a10" size="2" class="jwbn" id="b10" onchange="cek10()"> Rad/s 
+                    </tr>
+                </table>
+                <br>
+                <table style="margin-top: 5px;">
+                    <tr >
+                        <!-- atas -->
+                        <td style=" font-size: 18px;color:black" rowspan="2">b. ω$_{A}$ \( =\) ω$_{B}$</td>
+                    </tr>
+                </table>
+                <table style="margin-top: 5px;">
+                    <tr >
+                        <!-- atas -->
+                        <td style=" font-size: 18px;color:black" rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp; ω$_{B}$ \( =\)</td>
+                    <tr>
+                        <!-- bawah -->
+                        <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="a11" size="2" class="jwbn" id="b11" onchange="cek11()"> 
+                    </tr>
+                </table>
+                <br>
+                <table style="margin-top: 5px;">
+                    <tr >
+                        <td style=" font-size: 18px;color:black" rowspan="2">c. v$_{B}$  \( =\) ω$_{B}$ $\times$ R</td>
+                    </tr>
+                </table>
+                <table style="margin-top: 5px;">
+                    <tr >
+                        <td style=" font-size: 18px;color:black" rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp;v$_{B}$  \( =\)</td>
+                        <td style="font-size: 18px; color:black" > <input style="margin-bottom:4px;" type="text" name="a12" size="2" class="jwbn" id="b12" onchange="cek12()"> $\times$<input style="margin-bottom:4px;" type="text" name="a13" size="2" class="jwbn" id="b13" onchange="cek13()"></td>
+                    </tr>
+                </table>
+                <table style="margin-top: 5px;">
+                    <tr >
+                        <!-- atas -->
+                        <td style=" font-size: 18px;color:black" rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp;ω$_{B}$ \( =\)</td>
+                    <tr>
+                        <!-- bawah -->
+                        <td style=" font-size: 18px;color:black" rowspan="2"> <input type="text" name="a14" size="2" class="jwbn" id="b14" onchange="cek14()"> 
+                    </tr>
+                </table>
+                </form>
+            </p>
+         </div>
+         <div class="baris latihan2-content" style="display: none;">
+            <P style="text-indent: 0%;">Dua buah roda berputar dihubungkan seperti gambar berikut!
+                <br>
+                <center>
+                 <table >
+                    <tr>
+                    <td><img src="image/gambar/RODA SEPUSAT LATIHAN.png" alt="roda sepusat" style="width:250px; height: 250px;"></td>
+                    </tr>
+                </table>
+                </center>
+                <br> Jika kecepatan roda pertama adalah 20 m/s jari-jari roda pertama dan kedua masing-masing 20 cm dan 10 cm, tentukan kecepatan roda kedua..? 
+                <br>
+                <br> Diketahui:
+                <br>
+                <form id="form1">
+                <br><var>v$_1$</var> \(=\) <input type="text" name="aa1" size="2" class="jwbn" id="bb1" onchange="ccek1()"> m/s <br>
+                <br><var>r$_1$</var> \(=\) <input type="text" name="aa2" size="2" class="jwbn" id="bb2" onchange="ccek2()"> cm <br>
+                <br><var>r$_2$</var> \(=\) <input type="text" name="aa3" size="2" class="jwbn" id="bb3" onchange="ccek3()"> cm <br>
+                <br> Ditanyakan : v$_2$ ...?
+                <br>
+                <br> Jawab : 
+                <br> Kecepatan sudut untuk hubungan dua roda seperti soal adalah sama: <br>
+                <br> <var>ω$_1$</var>&nbsp; \(=\) <var>ω$_2$</var> <br>
+                <br> $\frac{\mathrm{v_1}}{r_1}$ \(=\) $\frac{\mathrm{v_2}}{r_2}$ <br>
+                <br>
+                <table>
+                    <tr >
+                        <!-- atas -->
+                        <td style=" font-size: 18px;color:black" rowspan="2">v$_2$ \( =\)</td>
+                        <td style="border-bottom: 1px solid rgb(0, 0, 0);  font-size: 18px; color:black" >
+                            <input style="margin-bottom:4px;" type="text" name="aa4" size="2" class="jwbn" id="bb4" onchange="ccek4()"> $\times$<input style="margin-bottom:4px;" type="text" name="aa5" size="2" class="jwbn" id="bb5" onchange="ccek5()"></td>
+                    </tr>
+                    <tr>
+                        <!-- bawah -->
+                        <td style=" font-size: 18px;color:black" rowspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="aa6" size="2" class="jwbn" id="bb6" onchange="ccek6()"> 
+                    </tr>
+                </table>
+                <br>
+                <table>
+                    <tr >
+                        <!-- atas -->
+                        <td style=" font-size: 18px;color:black" rowspan="2"><var>v$_2$</var> \( =\)</td>
+                        <td style=" font-size: 18px; color:black"><input style="margin-bottom:4px;" type="text" name="aa7" size="2" class="jwbn" id="bb7" onchange="ccek7()"> m/s</td>
+                    </tr>
+                </table>
+                <center>
+                    <br>
+                    <button id="btn-print-this" class="btnunduh">Download</button>
+                    <button id="upbtn" class="btnupload">Upload</button>
+                    <button id="selbtn" class="btnpilih">Pilih File</button>
+                    <input type="text" style="box-shadow : 2px 2px 6px rgba(0, 0, 0, 0.4);border: none; height: 40px; width: fit-content;" id="namebox"> <label id="extlab"></label>
+                    <span id="myimg"><label id="upprogress"></label></span>
+                   <br>
+                    <br>
+                </center>
+             </form>
+            </p>
+        </div>
+     </div>
+            
+        <div class="footer-nav">
+            <a href="Hubungan roda bersinggungan.html" class="footer-number">Selanjutnya</a>
+        </div>
+    </div>
+    <!-- CONTENT AREA END -->
+    
+    <!-- JAVASCRIPT AREA START-->
+    <script type="text/javascript">
+
+    //progressbar
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+    }
+
+    //dropdown menu
+    $(document).ready(function () {
+        $(".menu-btn").click(function () {
+            if ($(this).siblings(".menu-show").css("display") == "block") {
+                $(this).siblings(".menu-show").css("display", "none");
+            } else {
+                $('.menu-show').css("display", "none");
+                $(this).siblings(".menu-show").css("display", "block");
+            }
+        });
+
+        $("li ul li").click(function () {
+            $("li ul li").removeClass("active");
+            $(this).addClass("active");
+        });
+    
+        $('.nav_btn').click(function () {
+            $('.mobile_nav_items').toggleClass('active');
+        });
+    }); 
+    </script>
+    
+   <!-- java script menu latihan	 -->
+   <script>
+    const divContohSoal =  document.getElementById("contoh-soal");
+    const divLatihan =  document.getElementById("latihan");
+    const divLatihan2 = document.getElementById("latihan2")
+
+    divContohSoal.addEventListener("click", function() {
+        document.querySelector(".contoh-soal-content").style.display = "block";
+        document.querySelector(".latihan-content").style.display = "none";
+        document.querySelector(".latihan2-content").style.display ="none";
+        
+        document.querySelector(".contoh-soal-content").classList.add("animate__fadeIn");
+        document.querySelector(".latihan-content").classList.remove("animate__fadeIn"); 
+    });
+    
+    divLatihan.addEventListener("click", function() {
+        document.querySelector(".contoh-soal-content").style.display = "none";
+        document.querySelector(".latihan-content").style.display = "block";
+        document.querySelector(".latihan2-content").style.display ="none";
+
+    });
+
+    divLatihan2.addEventListener("click", function() {
+        document.querySelector(".contoh-soal-content").style.display = "none";
+        document.querySelector(".latihan-content").style.display = "none";
+        document.querySelector(".latihan2-content").style.display ="block";
+    });
+    </script>
+
+      <!-- javascript print -->
+      <script>
+        $(document).ready(function(){
+        $('#btn-print-this').click(function(){
+            $('.latihan2-content').printThis();
+        });
+      });
+     </script>
+
+      <!-- javascript reset form -->
+      <script>document.getElementById("form").reset()</script> 
+      <script>document.getElementById("form1").reset()</script> 
+     <!-- LATIHAN -->
+ 
+     <!-- firebase -->
+     <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBPsyT3idkbKgIs6Tv9VYUGBYJEwGmVwKk",
+            authDomain: "gerakmelingkar-af778.firebaseapp.com",
+            databaseURL: "https://gerakmelingkar-af778-default-rtdb.asia-southeast1.firebasedatabase.app",
+            projectId: "gerakmelingkar-af778",
+            storageBucket: "gerakmelingkar-af778.appspot.com",
+            messagingSenderId: "642003937999",
+            appId: "1:642003937999:web:50fc9c9e8e1fe5dbb465ba"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+
+        import { getStorage, ref as sRef, uploadBytesResumable, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-storage.js";
+
+        //Firebase Realtime Database
+        import { getDatabase, ref, child, get, set } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+        const db = getDatabase();
+
+        //FUNGSI WAKTU DAN HARI
+            var d = new Date();
+            var t = d.getTime();
+            var counter = t;
+
+            // ambil jamnya
+            window.setTimeout("waktu()", 1000);
+
+            function waktu() {
+                var tanggal = new Date();
+                setTimeout("waktu()", 1000);
+                return (tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal.getSeconds());
+            }
+
+            // harinya
+            function hari() {
+                let tanggallengkap = new String();
+                let namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+                namahari = namahari.split(" ");
+                let namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+                namabulan = namabulan.split(" ");
+                let tgl = new Date();
+                let hari = tgl.getDay();
+                let tanggal = tgl.getDate();
+                let bulan = tgl.getMonth();
+                let tahun = tgl.getFullYear();
+                tanggallengkap = namahari[hari] + ", " + tanggal + " " + namabulan[bulan] + " " + tahun;
+                return (tanggallengkap);
+            }
+
+            let waktunya = waktu();
+            let harinya = hari();
+
+                //Variables & Reference
+
+                var files = [];
+                var reader = new FileReader();
+
+                var namebox = document.getElementById('namebox');
+                var extlab = document.getElementById('extlab');
+                var myimg = document.getElementById('myimg');
+                var proglab = document.getElementById('upprogress');
+                var SelBtn = document.getElementById('selbtn');
+                var UpBtn = document.getElementById('upbtn');
+                var DownBtn = document.getElementById('downbtn');
+
+                var input = document.createElement('input');
+                input.type = 'file';
+
+                input.onchange = e =>{
+                    files = e.target.files;
+
+                    var extention = GetFileExt(files[0]);
+                    var name = GetFileName(files[0]);
+
+                    namebox.value= name;
+                    extlab.innerHTML = extention;
+
+                    reader.readAsDataURL(files[0]);
+                }
+                reader.onload = function(){
+                    myimg.src = reader.result;
+                }
+
+                //Selection
+                SelBtn.onclick = function(){
+                  input.click();
+                }
+
+                function GetFileExt(file){
+                    var temp = file.name.split('.');
+                    var ext = temp.slice((temp.length-1),(temp.length));
+                    return '.' + ext[0];
+                }
+
+                function GetFileName(file){
+                    var temp = file.name.split('.');
+                    var fname = temp.slice(0,-1).join('.');
+                    return fname;
+                }
+                function validasi(){
+    
+  
+                if (namebox.value == "")
+                
+                {
+                  alert("silahkan pilih file");
+                  return false;
+                }
+
+                return true;
+              }
+
+            async function UploadProcess(){
+                  if (!validasi()){
+                  return;
+              };
+
+                  //FUNGSI WAKTU DAN HARI
+            var d = new Date();
+            var t = d.getTime();
+            var counter = t;
+
+            // ambil jamnya
+            window.setTimeout("waktu()", 1000);
+
+            function waktu() {
+                var tanggal = new Date();
+                setTimeout("waktu()", 1000);
+                return (tanggal.getHours() + ":" + tanggal.getMinutes() + ":" + tanggal.getSeconds());
+            }
+
+            // harinya
+            function hari() {
+                let tanggallengkap = new String();
+                let namahari = ("Minggu Senin Selasa Rabu Kamis Jumat Sabtu");
+                namahari = namahari.split(" ");
+                let namabulan = ("Januari Februari Maret April Mei Juni Juli Agustus September Oktober November Desember");
+                namabulan = namabulan.split(" ");
+                let tgl = new Date();
+                let hari = tgl.getDay();
+                let tanggal = tgl.getDate();
+                let bulan = tgl.getMonth();
+                let tahun = tgl.getFullYear();
+                tanggallengkap = namahari[hari] + ", " + tanggal + " " + namabulan[bulan] + " " + tahun;
+                return (tanggallengkap);
+            }
+
+            let waktunya = waktu();
+            let harinya = hari();
+            
+            // upload file
+
+            var ImgToUpload = files[0];
+            var name = namebox.value;
+
+            const metaData ={
+                contentType: ImgToUpload.type
+            }
+
+            const storage = getStorage();
+
+            const storageRef = sRef(storage, "Tugas_7/"+name);
+
+            const UploadTask = uploadBytesResumable(storageRef, ImgToUpload, metaData);
+
+            UploadTask.on('state-changed', (snapshot)=>{
+                var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                proglab.innerHTML = "Upload"+ progress + "%";
+            },
+
+          
+            (error) =>{
+                alert("error : File not uploaded");
+            },
+
+            ()=>{
+                getDownloadURL(UploadTask.snapshot.ref).then((downloadURL)=>{
+                  const fullnama =  sessionStorage.getItem('nama');
+                  const niss     =  sessionStorage.getItem('nis');
+                  const kelass   =  sessionStorage.getItem('kelas');
+                  const sekolahh =  sessionStorage.getItem('sekolah');
+                    set(ref(db,"Tugas_7/"+name),{
+                      
+                        namasiswa:fullnama,
+                        nis:niss,
+                        kelas:kelass,
+                        sekolah:sekolahh,
+                        nama:name,
+                        link:downloadURL,
+                        waktu: waktunya,
+                        hari:harinya,
+                    });
+
+                    // $('#exampleModal').modal('hide');
+                    alert("sukses");
+
+                });
+            }
+            );
+        
+      }
+
+      UpBtn.onclick = UploadProcess;
+
+        const fullnama =  sessionStorage.getItem('nama');
+        const niss     =  sessionStorage.getItem('nis');
+        const kelass   =  sessionStorage.getItem('kelas');
+        const sekolahh =  sessionStorage.getItem('sekolah');
+
+        const Btn = document.getElementById('Btn');
+        const Btn2 = document.getElementById('Btn2');
+
+        function submit(){
+                    set(ref(db,"TekananHidro/"+niss),{
+                        
+                namasiswa:fullnama,
+                nis:niss,
+                kelas:kelass,
+                sekolah:sekolahh,
+                skor:Math.floor(skor1),
+                waktu: waktunya,
+                hari:harinya,
+            });
+        }
+
+        
+//Assign the events
+Btn.addEventListener('click', submit);
+
+function kirim(){
+              set(ref(db,"TekananHidro2/"+niss),{
+                
+                namasiswa:fullnama,
+                nis:niss,
+                kelas:kelass,
+                sekolah:sekolahh,
+                skor:Math.floor(skor2),
+                waktu: waktunya,
+                hari:harinya,
+            });
+        }
+
+        
+//Assign the events
+Btn2.addEventListener('click', kirim);
+
+      //MENAMBAHKAN NAMA USER
+     
+      </script>
+
+    <!-- JAVASCRIPT AREA END -->		
+    
+</body>
+</html>

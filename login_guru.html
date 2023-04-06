@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/64d58efce2.js"crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="assets/css/style_login.css" />
+    <title>login guru</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <center>
+          <div class="sign-in-form">
+            <h2 class="title">SILAHKAN MASUK !!!</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" id="nama" placeholder="nama" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="pass" placeholder="Password" />
+            </div>
+            <input type="submit" id="log_in" value="Masuk" class="btn solid" />
+            <br>
+            <a href="awal.html" style="text-decoration: none; color: black;">Login Siswa</a>
+          </div>
+          </center>
+        </div>
+      </div>
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <img src="img/log1.png" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+    
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+        import { getDatabase, ref, set, child, get, push, onValue } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-database.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+  
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyBPsyT3idkbKgIs6Tv9VYUGBYJEwGmVwKk",
+          authDomain: "gerakmelingkar-af778.firebaseapp.com",
+          databaseURL: "https://gerakmelingkar-af778-default-rtdb.asia-southeast1.firebasedatabase.app",
+          projectId: "gerakmelingkar-af778",
+          storageBucket: "gerakmelingkar-af778.appspot.com",
+          messagingSenderId: "642003937999",
+          appId: "1:642003937999:web:50fc9c9e8e1fe5dbb465ba"
+        };
+  
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+  
+        const database = getDatabase();
+  
+        log_in.addEventListener("click", (e) => {
+          get(child(ref(database), "guru/" + nama.value))
+            .then((snapshot) => {
+              if (snapshot.exists()) {
+                let dbnama = snapshot.val().nama;
+                let dbpass = snapshot.val().pass;
+                if (dbnama == nama.value && dbpass == pass.value) {
+                  sessionStorage.setItem("nama", dbnama);
+                  sessionStorage.setItem("password", dbpass);
+                  window.location = "Siswa.html";
+                  // alert("login berhasil");
+                } else {
+                  alert("nama atau password tidak valid");
+                }
+              } else {
+                alert("Anda belum terdafar");
+              }
+            })
+            .catch((error) => {
+              console.error(error);
+            });
+        });
+      </script>
+    <script src="app.js"></script>
+  </body>
+</html>
